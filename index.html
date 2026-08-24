@@ -1,0 +1,3439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Toto Tools — Catálogo</title>
+<meta name="description" content="Catálogo de Toto Tools — mira todas las herramientas disponibles y haz tu pedido directo por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Toto Tools — Catálogo">
+<meta property="og:description" content="Mira todas las herramientas disponibles y haz tu pedido directo por WhatsApp.">
+<meta property="og:image" content="https://fantastic-raindrop-f7276b.netlify.app/og-image.png">
+<meta property="og:url" content="https://fantastic-raindrop-f7276b.netlify.app">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Toto Tools — Catálogo">
+<meta name="twitter:description" content="Mira todas las herramientas disponibles y haz tu pedido directo por WhatsApp.">
+<meta name="twitter:image" content="https://fantastic-raindrop-f7276b.netlify.app/og-image.png">
+<link rel="canonical" href="https://fantastic-raindrop-f7276b.netlify.app">
+<!-- Favicon / ícono para pestaña del navegador y accesos directos. Sube estos
+     dos archivos a la raíz del sitio (junto a manifest.json y sw.js):
+     favicon.png (cualquier tamaño cuadrado, ideal 512x512) y
+     apple-touch-icon.png (180x180). Si ya tienes el icon.png que usas para
+     el APK, puedes usar el mismo archivo para los dos. -->
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Preconnect: adelanta la conexión a imgbb (donde viven las fotos) para que
+     carguen un poco más rápido. (A Firebase no se le puede hacer preconnect
+     genérico porque el dominio cambia según tu proyecto: algo como
+     tu-proyecto-default-rtdb.firebaseio.com — si quieres, cámbialo por el
+     tuyo exacto en <link rel="preconnect" href="https://TU-PROYECTO-default-rtdb.firebaseio.com">) -->
+<link rel="preconnect" href="https://i.ibb.co">
+<link rel="dns-prefetch" href="https://i.ibb.co">
+<!-- PWA / modo offline: manifest + service worker (ver manifest.json y sw.js) -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#20242A">
+<style>
+  :root{
+    --carbon:#20242A;
+    --carbon-claro:#34393F;
+    --carbon-oscuro:#0A0C0E;
+    --acero-claro:#EEF0F2;
+    --ambar:#F5A623;
+    --ambar-oscuro:#C97C00;
+    --ambar-claro:#FFC24D;
+    --ambar-texto:#A66500;
+    --ambar-rgb:245,166,35;
+    --acero:#4C5A67;
+    --acero-oscuro:#333F4A;
+    --crema:#F7F5F0;
+    --tinta:#1A1D20;
+    --gris:#6C7178;
+    --linea:#E1E2E5;
+    --blanco:#FFFFFF;
+    --radio:14px;
+    --sombra: 0 2px 10px rgba(20,22,26,.08);
+    --sombra-alta: 0 12px 32px rgba(20,22,26,.20);
+    --sombra-3d: 0 1px 2px rgba(20,22,26,.10), 0 10px 20px rgba(20,22,26,.14), 0 24px 44px -14px rgba(20,22,26,.30);
+    font-size:16px;
+  }
+  *{box-sizing:border-box;}
+  @media (prefers-reduced-motion: reduce){
+    *, *::before, *::after{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
+  }
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:var(--crema);
+    color:var(--tinta);
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:96px;
+  }
+  h1,h2,h3{ font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif; margin:0; }
+
+  /* ---------- Header ---------- */
+  header.top{
+    background:
+      repeating-linear-gradient(135deg, rgba(255,255,255,.035) 0 2px, transparent 2px 14px),
+      radial-gradient(120% 140% at 15% -10%, var(--carbon-claro) 0%, var(--carbon) 55%, var(--carbon-oscuro) 100%);
+    color:var(--blanco);
+    padding:22px 18px 60px;
+    position:relative;
+    overflow:hidden;
+  }
+  header.top::before{
+    content:"";
+    position:absolute; top:-40%; right:-18%;
+    width:260px; height:260px; border-radius:50%;
+    background:radial-gradient(circle, rgba(var(--ambar-rgb),.24) 0%, transparent 68%);
+    pointer-events:none;
+  }
+  header.top::after{
+    content:"";
+    position:absolute; left:0; right:0; bottom:0;
+    height:34px; background:var(--crema);
+    border-radius:50% 50% 0 0 / 100% 100% 0 0;
+    transform:scaleX(1.3);
+  }
+  .brand-row{ display:flex; align-items:center; gap:12px; position:relative; z-index:1; }
+  .brand-mark{
+    width:46px; height:46px; border-radius:13px;
+    background:linear-gradient(145deg, var(--ambar-claro), var(--ambar) 55%, var(--ambar-oscuro));
+    display:flex; align-items:center; justify-content:center;
+    font-size:22px; flex-shrink:0;
+    overflow:hidden;
+    box-shadow:0 6px 14px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.35), inset 0 -2px 4px rgba(0,0,0,.18);
+  }
+  .brand-mark img{
+    width:100%; height:100%; object-fit:cover; display:block;
+  }
+  .brand-name{ font-size:1.5rem; letter-spacing:.2px; text-shadow:0 2px 6px rgba(0,0,0,.18); }
+  .brand-tag{ font-size:.82rem; opacity:.78; margin-top:2px; }
+
+  .horario-pill{
+    display:inline-flex; align-items:center; gap:6px;
+    margin-top:8px;
+    background:rgba(255,255,255,.14);
+    padding:5px 12px; border-radius:999px;
+    font-size:.78rem; font-weight:600;
+  }
+  .horario-pill .punto{ width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+  .horario-pill.abierto .punto{ background:#3ECF6E; }
+  .horario-pill.cerrado .punto{ background:#E85C5C; }
+
+  /* ---------- Franja "Nuevo en la tienda" ---------- */
+  .novedades{ padding:16px 0 4px; }
+  .novedades h2{
+    font-size:1.05rem; padding:0 16px 10px; color:var(--tinta);
+  }
+  .novedades-scroll{
+    display:flex; gap:12px; overflow-x:auto; padding:0 16px 10px;
+    scrollbar-width:none;
+  }
+  .novedades-scroll::-webkit-scrollbar{ display:none; }
+  .novedad-card{
+    flex-shrink:0; width:132px;
+    background:var(--blanco); border-radius:var(--radio);
+    box-shadow:var(--sombra); overflow:hidden; cursor:pointer;
+  }
+  .novedad-card .foto-wrap{ aspect-ratio:1/1; }
+  .novedad-card .info{ padding:8px 9px 10px; }
+  .novedad-card .nombre{ font-size:.76rem; line-height:1.2; min-height:1.9em; margin-bottom:3px; }
+  .novedad-card .precio{ font-size:.82rem; font-weight:700; color:var(--carbon); }
+
+  /* ---------- Opciones de pago en el carrito ---------- */
+  .pago-opciones{ display:flex; flex-direction:column; gap:8px; margin:10px 0; }
+  .pago-opcion{
+    display:flex; align-items:center; gap:10px;
+    border:1px solid var(--linea); border-radius:10px;
+    padding:10px 12px; cursor:pointer;
+  }
+  .pago-opcion.selected{ border-color:var(--carbon); background:var(--acero-claro); }
+  .pago-opcion .desc{ font-size:.72rem; color:var(--gris); }
+
+  .search-wrap{
+    position:relative;
+    margin-top:20px;
+    z-index:2;
+  }
+  .search-wrap input{
+    width:100%;
+    padding:13px 84px 13px 42px;
+    border-radius:999px;
+    border:none;
+    font-size:.95rem;
+    background:var(--blanco);
+    box-shadow:var(--sombra-alta);
+    color:var(--tinta);
+  }
+  .search-wrap input:focus{ outline:2px solid var(--ambar); outline-offset:1px; }
+  .search-icon{
+    position:absolute; left:16px; top:50%; transform:translateY(-50%);
+    opacity:.45; font-size:.95rem; pointer-events:none;
+  }
+  .search-tools-btn{
+    position:absolute; right:6px; top:50%; transform:translateY(-50%);
+    width:34px; height:34px; border-radius:50%; border:none;
+    background:var(--acero-claro); color:var(--carbon);
+    font-size:1.02rem; display:flex; align-items:center; justify-content:center;
+    cursor:pointer; padding:0;
+  }
+  .search-tools-btn:active{ transform:translateY(-50%) scale(.92); }
+
+  /* ---------- Chips de categoría ---------- */
+  .chips{
+    display:flex; gap:8px; overflow-x:auto;
+    padding:14px 16px 4px;
+    scrollbar-width:none;
+  }
+  .chips::-webkit-scrollbar{ display:none; }
+  .chip{
+    flex-shrink:0;
+    padding:8px 15px;
+    border-radius:999px;
+    border:1px solid var(--linea);
+    background:var(--blanco);
+    color:var(--tinta);
+    font-size:.85rem;
+    cursor:pointer;
+    white-space:nowrap;
+    transition:background .15s, color .15s, border-color .15s;
+  }
+  .chip.active{ background:var(--carbon); border-color:var(--carbon); color:var(--blanco); box-shadow:inset 0 1px 4px rgba(0,0,0,.25), 0 2px 6px rgba(20,22,26,.25); }
+
+  /* ---------- Grid de productos ---------- */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+    padding:14px 16px 8px;
+  }
+  @media(min-width:560px){ .grid{ grid-template-columns:repeat(3,1fr); } }
+  @media(min-width:860px){ .grid{ grid-template-columns:repeat(4,1fr); } }
+
+  .card{
+    background:var(--blanco);
+    border-radius:18px;
+    border:1px solid var(--linea);
+    box-shadow: 0 1px 2px rgba(20,22,26,.08), 0 6px 16px rgba(20,22,26,.10);
+    overflow:hidden;
+    display:flex; flex-direction:column;
+    position:relative;
+    cursor:pointer;
+    transition:box-shadow .28s cubic-bezier(.22,1,.36,1), transform .28s cubic-bezier(.22,1,.36,1);
+    animation: cardIn .48s cubic-bezier(.22,1,.36,1) both;
+  }
+  @keyframes cardIn{
+    from{ opacity:0; transform:translateY(16px) scale(.96); }
+    to{ opacity:1; transform:translateY(0) scale(1); }
+  }
+  .grid .card:nth-child(1){ animation-delay:.00s; }
+  .grid .card:nth-child(2){ animation-delay:.03s; }
+  .grid .card:nth-child(3){ animation-delay:.06s; }
+  .grid .card:nth-child(4){ animation-delay:.09s; }
+  .grid .card:nth-child(5){ animation-delay:.12s; }
+  .grid .card:nth-child(6){ animation-delay:.15s; }
+  .grid .card:nth-child(7){ animation-delay:.18s; }
+  .grid .card:nth-child(n+8){ animation-delay:.20s; }
+  .card:active{ transform:translateY(-1px) scale(.98); box-shadow:0 1px 2px rgba(20,22,26,.10); }
+  @media(hover:hover){
+    .card:hover{ box-shadow:var(--sombra-3d); transform:translateY(-7px); }
+    .card:hover .foto-wrap img{ transform:scale(1.07); }
+    .card:hover .foto-wrap::after{ transform:translateX(130%) translateY(-130%) rotate(20deg); }
+  }
+  .card.agotada{ }
+  .card .foto-wrap{
+    aspect-ratio:1/1;
+    background:var(--acero-claro);
+    display:flex; align-items:center; justify-content:center;
+    overflow:hidden;
+    position:relative;
+  }
+  .card .foto-wrap img{ width:100%; height:100%; object-fit:cover; transition:transform .45s cubic-bezier(.22,1,.36,1); }
+  .foto-placeholder{ font-size:2rem; opacity:.35; }
+  /* brillo diagonal que cruza la foto al pasar el cursor — un guiño a la
+     superficie pulida de una herramienta metálica */
+  .card .foto-wrap::after{
+    content:"";
+    position:absolute; top:-60%; left:-60%;
+    width:60%; height:220%;
+    background:linear-gradient(115deg, transparent, rgba(255,255,255,.5), transparent);
+    transform:translateX(-130%) translateY(130%) rotate(20deg);
+    transition:transform .6s ease;
+    pointer-events:none;
+  }
+
+  .badge-tag{
+    position:absolute; top:8px; left:8px;
+    background:linear-gradient(145deg, var(--ambar-claro), var(--ambar) 60%, var(--ambar-oscuro));
+    color:#fff;
+    font-size:.66rem; font-weight:700;
+    padding:3px 9px; border-radius:999px;
+    letter-spacing:.2px;
+    box-shadow:0 3px 8px rgba(201,124,0,.35), inset 0 1px 0 rgba(255,255,255,.45);
+    z-index:2;
+  }
+  .badge-nuevo{
+    position:absolute; top:8px; right:8px;
+    background:linear-gradient(145deg, #6C7B8A, var(--acero) 65%, var(--acero-oscuro));
+    color:#fff;
+    font-size:.66rem; font-weight:600;
+    padding:3px 9px; border-radius:999px;
+    letter-spacing:.3px;
+    box-shadow:0 3px 8px rgba(76,90,103,.4), inset 0 1px 0 rgba(255,255,255,.35);
+    z-index:2;
+  }
+  /* Botón de favorito (corazón) sobre la foto del producto, abajo del
+     badge de descuento para no chocar con "NUEVO" que va en la otra esquina. */
+  .fav-btn{
+    position:absolute; top:8px; left:8px;
+    width:30px; height:30px; border-radius:50%; border:none;
+    background:rgba(20,22,26,.38);
+    backdrop-filter:blur(2px);
+    display:flex; align-items:center; justify-content:center;
+    font-size:.98rem; cursor:pointer; z-index:3;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .fav-btn:active{ transform:scale(.88); }
+  .fav-btn.activo{ background:rgba(232,92,92,.92); }
+  .card .badge-tag{ top:44px; } /* baja el descuento para dejar sitio al corazón arriba */
+  /* Placa de "agotado": ya no tapa toda la foto (así se sigue viendo el
+     producto, solo en gris) — es una placa oscura con dos remaches, como
+     una etiqueta metálica atornillada, apoyada en la esquina inferior. */
+  .placa-agotado{
+    position:absolute; left:8px; right:8px; bottom:8px;
+    background:linear-gradient(180deg, var(--carbon-claro), var(--carbon) 75%);
+    color:#fff;
+    font-size:.64rem; font-weight:800; letter-spacing:.14em;
+    text-transform:uppercase;
+    padding:6px 10px;
+    border-radius:7px;
+    display:flex; align-items:center; justify-content:center; gap:9px;
+    box-shadow:0 3px 10px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.08);
+    z-index:2;
+  }
+  .placa-agotado .remache{
+    width:5px; height:5px; border-radius:50%; flex-shrink:0;
+    background:radial-gradient(circle at 35% 30%, #f2f2f2, #999 55%, #555);
+    box-shadow:0 0.5px 1.5px rgba(0,0,0,.6);
+  }
+  /* Placa de urgencia por poco stock, misma forma que "Agotado" pero en
+     rojo/ámbar y solo cuando SÍ hay stock (así nunca chocan las dos). */
+  .placa-urgencia{
+    position:absolute; left:8px; right:8px; bottom:8px;
+    background:linear-gradient(180deg, #E5533D, #C43A28 75%);
+    color:#fff;
+    font-size:.64rem; font-weight:800; letter-spacing:.03em;
+    padding:6px 10px;
+    border-radius:7px;
+    display:flex; align-items:center; justify-content:center; gap:5px;
+    box-shadow:0 3px 10px rgba(196,58,40,.4), inset 0 1px 0 rgba(255,255,255,.2);
+    z-index:2;
+  }
+  .link-avisame{
+    font-size:.72rem; font-weight:700; color:var(--ambar-texto);
+    display:inline-flex; align-items:center; gap:4px;
+    text-decoration:none; cursor:pointer;
+  }
+  .link-avisame:active{ opacity:.7; }
+
+  .card-body{ padding:11px 12px 12px; display:flex; flex-direction:column; gap:5px; flex:1; }
+  .card-cat{ font-size:.68rem; color:var(--gris); text-transform:uppercase; letter-spacing:.4px; }
+  .card-name{
+    font-size:.87rem; line-height:1.28; color:var(--tinta);
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+    min-height:2.3em;
+  }
+  .price-row{ display:flex; align-items:baseline; gap:6px; margin-top:auto; flex-wrap:wrap; }
+  .price-old{ font-size:.72rem; color:var(--gris); text-decoration:line-through; }
+  .price-now{ font-size:1.02rem; font-weight:700; color:var(--carbon); }
+
+  .add-row{ display:flex; align-items:center; justify-content:space-between; margin-top:9px; }
+  .btn-add{
+    background:linear-gradient(155deg, var(--ambar-claro), var(--ambar) 55%, var(--ambar-oscuro));
+    color:var(--carbon); border:none;
+    width:32px; height:32px; border-radius:50%;
+    font-size:1.05rem; font-weight:800; line-height:1;
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer;
+    box-shadow:0 3px 8px rgba(201,124,0,.4), inset 0 1px 0 rgba(255,255,255,.5), inset 0 -2px 3px rgba(0,0,0,.15);
+    transition:transform .12s ease;
+  }
+  .btn-add:active{ transform:scale(.9); box-shadow:0 1px 3px rgba(201,124,0,.4), inset 0 1px 4px rgba(0,0,0,.2); }
+  .btn-add.added{
+    background:#1FAE62;
+    animation:addPop .45s ease;
+    pointer-events:none;
+  }
+  @keyframes addPop{
+    0%{ transform:scale(1); }
+    35%{ transform:scale(1.3) rotate(-8deg); }
+    60%{ transform:scale(.9) rotate(4deg); }
+    100%{ transform:scale(1) rotate(0); }
+  }
+  .qty-stepper{
+    display:flex; align-items:center; gap:0;
+    border:1px solid var(--linea); border-radius:999px; overflow:hidden;
+  }
+  .qty-stepper button{
+    width:28px; height:28px; border:none; background:var(--acero-claro);
+    color:var(--carbon); font-size:1rem; cursor:pointer; flex-shrink:0;
+  }
+  .qty-stepper input.qty-input{
+    width:30px; text-align:center; font-size:.85rem; font-weight:600;
+    border:none; background:transparent; color:var(--tinta); padding:0;
+    -moz-appearance:textfield;
+  }
+  .qty-stepper input.qty-input::-webkit-outer-spin-button,
+  .qty-stepper input.qty-input::-webkit-inner-spin-button{ -webkit-appearance:none; margin:0; }
+
+  /* ---------- Controles de lista: orden + interruptor de agotados ---------- */
+  .controles-lista{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:10px; padding:2px 16px 8px; flex-wrap:wrap;
+  }
+  .select-orden{
+    border:1px solid var(--linea); border-radius:999px;
+    background:var(--blanco); color:var(--tinta);
+    font-size:.8rem; padding:7px 12px;
+    max-width:100%;
+  }
+  .switch-agotados{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:.8rem; color:var(--gris); cursor:pointer; user-select:none;
+  }
+  .switch-agotados .track{
+    width:34px; height:20px; border-radius:999px; background:var(--linea);
+    position:relative; flex-shrink:0; transition:background .15s ease;
+  }
+  .switch-agotados .track::after{
+    content:""; position:absolute; top:2px; left:2px;
+    width:16px; height:16px; border-radius:50%; background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,.25);
+    transition:transform .15s ease;
+  }
+  .switch-agotados.activo .track{ background:var(--carbon); }
+  .switch-agotados.activo .track::after{ transform:translateX(14px); }
+
+  .empty-state{
+    text-align:center; padding:60px 24px; color:var(--gris);
+  }
+  .empty-state .icono{ font-size:2.4rem; margin-bottom:10px; }
+  .btn-ver-mas{
+    display:block; margin:4px 18px 24px; width:calc(100% - 36px);
+    padding:13px; border:1.5px solid var(--carbon); background:transparent; color:var(--carbon);
+    border-radius:12px; font-size:.88rem; font-weight:700; cursor:pointer;
+  }
+  .btn-ver-mas:active{ background:var(--acero-claro); }
+
+  /* ---------- Burbuja carrito ---------- */
+  .cart-bubble{
+    position:fixed; left:16px; right:16px; bottom:16px;
+    background:var(--tinta); color:#fff;
+    border:none; border-radius:999px;
+    padding:12px 20px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px;
+    box-shadow:var(--sombra-alta);
+    cursor:pointer; z-index:40;
+    transition:transform .15s, opacity .25s ease, visibility .25s;
+  }
+  .cart-bubble:active{ transform:scale(.97); }
+
+  /* ---------- Banner "Instalar app" (beforeinstallprompt) ---------- */
+  .instalar-banner{
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+    background:var(--acero-claro); color:var(--tinta);
+    padding:10px 14px; font-size:.82rem;
+    border-bottom:1px solid var(--linea);
+  }
+  .instalar-banner-btns{ display:flex; align-items:center; gap:8px; flex-shrink:0; }
+  .instalar-banner-btns button{
+    border:none; border-radius:999px; cursor:pointer; font-size:.8rem;
+  }
+  #btnInstalarApp{
+    background:var(--carbon); color:#fff; padding:7px 14px; font-weight:600;
+  }
+  #btnCerrarInstalar{
+    background:transparent; color:var(--gris); padding:6px; font-size:.9rem;
+  }
+  .cart-bubble .cart-bubble-label{
+    font-size:.72rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+    color:rgba(255,255,255,.72);
+  }
+  .cart-bubble .cart-bubble-info{
+    font-size:1rem; font-weight:700;
+  }
+  .cart-bubble .cart-bubble-info .dot{ color:rgba(255,255,255,.5); margin:0 6px; font-weight:400; }
+  .cart-bubble.hidden{
+    opacity:0; visibility:hidden; pointer-events:none;
+    transform:translateY(24px) scale(.9);
+  }
+  .cart-bubble.bump{ animation:cartBump .35s ease; }
+  @keyframes cartBump{
+    0%{ transform:scale(1); }
+    30%{ transform:scale(1.08); }
+    60%{ transform:scale(.96); }
+    100%{ transform:scale(1); }
+  }
+
+  /* ---------- Modal carrito ---------- */
+  .overlay{
+    position:fixed; inset:0; background:rgba(15,33,25,.45);
+    z-index:50; display:none; align-items:flex-end;
+  }
+  .overlay.show{ display:flex; }
+  .sheet{
+    background:var(--crema);
+    width:100%; max-height:86vh;
+    border-radius:20px 20px 0 0;
+    display:flex; flex-direction:column;
+    animation:up .22s ease-out;
+  }
+  @keyframes up{ from{ transform:translateY(24px); opacity:.4; } to{ transform:translateY(0); opacity:1; } }
+  .sheet-head{
+    padding:16px 18px 10px;
+    display:flex; align-items:center; justify-content:space-between;
+    border-bottom:1px solid var(--linea);
+  }
+  .sheet-head h2{ font-size:1.15rem; }
+  .close-x{ background:none; border:none; font-size:1.3rem; color:var(--gris); cursor:pointer; padding:4px; }
+  .sheet-body{ overflow-y:auto; padding:6px 18px; flex:1 1 auto; min-height:130px; }
+  .cart-item{
+    display:flex; gap:10px; align-items:center;
+    padding:12px 10px; border-bottom:1px dashed var(--linea);
+    border-radius:10px;
+  }
+  .cart-item:hover, .cart-item:active{ background:var(--acero-claro); }
+  .cart-item img{ width:52px; height:52px; border-radius:10px; object-fit:cover; background:var(--acero-claro); flex-shrink:0; }
+  .cart-item-info{ flex:1; min-width:0; }
+  .cart-item-info .nombre{ font-size:.88rem; font-weight:600; color:var(--tinta); margin-bottom:3px; }
+  .cart-item-info .precio{ font-size:.8rem; color:#4A5650; font-weight:500; }
+  .cart-item-remove{ background:var(--acero-claro); border:none; border-radius:50%; width:32px; height:32px; color:var(--carbon); font-size:.95rem; cursor:pointer; padding:0; flex-shrink:0; }
+
+  /* ---------- Herramientas (calculadora de cable + convertidor) ---------- */
+  .tools-tabs{ display:flex; gap:8px; margin:8px 0 16px; }
+  .tools-tab{
+    flex:1; padding:10px 8px; border-radius:10px; border:1.5px solid var(--linea);
+    background:var(--blanco); color:var(--gris); font-size:.82rem; font-weight:700;
+    cursor:pointer; text-align:center;
+  }
+  .tools-tab.active{ background:var(--carbon); border-color:var(--carbon); color:#fff; }
+  .tools-voltaje{ display:flex; gap:8px; }
+  .tools-voltaje-btn{
+    flex:1; padding:10px 8px; border-radius:10px; border:1.5px solid var(--linea);
+    background:var(--blanco); color:var(--gris); font-size:.85rem; font-weight:700;
+    cursor:pointer; text-align:center;
+  }
+  .tools-voltaje-btn.active{ background:var(--ambar); border-color:var(--ambar-oscuro); color:#fff; }
+  .tools-field{ margin-bottom:14px; }
+  .tools-field label{ display:block; font-size:.78rem; font-weight:600; color:var(--gris); margin-bottom:6px; }
+  .tools-field select, .tools-field input{
+    width:100%; padding:11px 12px; border-radius:10px; border:1.5px solid var(--linea);
+    font-size:.92rem; color:var(--tinta); background:var(--blanco);
+  }
+  .tools-field select:focus, .tools-field input:focus{ outline:2px solid var(--ambar); outline-offset:1px; }
+  .tools-resultado{ display:flex; gap:10px; margin:10px 0 8px; }
+  .tools-resultado-item{
+    flex:1; background:var(--acero-claro); border-radius:12px; padding:12px 14px; text-align:center;
+  }
+  .tools-resultado-item .label{ font-size:.68rem; color:var(--gris); text-transform:uppercase; letter-spacing:.3px; }
+  .tools-resultado-item .valor{ font-size:1.3rem; font-weight:800; color:var(--tinta); margin:4px 0 2px; }
+  .tools-resultado-item .sub{ font-size:.7rem; color:var(--gris); }
+  .tools-aviso{ font-size:.74rem; color:var(--ambar-texto); background:rgba(var(--ambar-rgb),.1); padding:8px 10px; border-radius:8px; margin-top:8px; line-height:1.4; }
+  .tools-productos-label{ font-size:.78rem; font-weight:700; color:var(--tinta); margin:16px 0 8px; }
+  .tools-mini-list{ display:flex; flex-direction:column; gap:8px; }
+  .tools-mini-card{
+    display:flex; align-items:center; gap:10px; padding:8px; border-radius:10px;
+    background:var(--acero-claro); cursor:pointer;
+  }
+  .tools-mini-card:active{ opacity:.75; }
+  .tools-mini-card img{ width:44px; height:44px; border-radius:8px; object-fit:cover; flex-shrink:0; }
+  .tools-mini-info .nombre{ font-size:.83rem; font-weight:600; color:var(--tinta); }
+  .tools-mini-info .precio{ font-size:.78rem; color:var(--gris); margin-top:2px; }
+  .tools-empty{ font-size:.8rem; color:var(--gris); padding:10px 2px; }
+  .conv-grid{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+
+  .sheet-foot{ padding:14px 18px 20px; border-top:1px solid var(--linea); background:var(--blanco); flex-shrink:0; max-height:52vh; overflow-y:auto; }
+  .total-row{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:12px; }
+  .total-row .label{ font-size:.85rem; color:var(--gris); }
+  .total-row .valor{ font-size:1.3rem; font-weight:700; color:var(--carbon); }
+  .btn-whatsapp{
+    width:100%; padding:15px; border:none; border-radius:12px;
+    background:linear-gradient(155deg, #2FE07C, #25D366 55%, #17A751);
+    color:#fff; font-size:.98rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    cursor:pointer;
+    box-shadow:0 6px 16px rgba(37,211,102,.35), inset 0 1px 0 rgba(255,255,255,.3);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .btn-whatsapp:active{ opacity:.9; transform:scale(.98); box-shadow:0 2px 6px rgba(37,211,102,.35); }
+  .btn-cotizacion{
+    width:100%; padding:13px; border-radius:12px;
+    background:var(--acero-claro); color:var(--carbon);
+    border:1.5px solid var(--linea);
+    font-size:.9rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    cursor:pointer; margin-top:8px;
+    transition:transform .12s ease;
+  }
+  .btn-cotizacion:active{ transform:scale(.98); }
+  .btn-cotizacion:disabled{ opacity:.6; }
+  .nota-envio{ font-size:.74rem; color:var(--gris); text-align:center; margin-top:10px; }
+
+  /* ---------- Cinta deslizante de aviso ---------- */
+  .banner-ticker{
+    background:#D64545; color:#fff; overflow:hidden; white-space:nowrap;
+    padding:8px 0;
+  }
+  .banner-ticker-track{
+    display:flex; width:max-content;
+    animation:ticker-scroll 18s linear infinite;
+    font-size:.82rem; font-weight:700; letter-spacing:.01em;
+  }
+  .banner-ticker-track .seg{ display:flex; align-items:center; padding-right:60px; white-space:nowrap; }
+  @keyframes ticker-scroll{
+    from{ transform:translateX(0); }
+    to{ transform:translateX(-50%); }
+  }
+
+
+  /* ---------- Info de la tienda ---------- */
+  .info-desc{ font-size:.9rem; color:var(--gris); line-height:1.55; margin:2px 0 16px; }
+  .info-desc.clamped{
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;
+    overflow:hidden; margin-bottom:4px;
+  }
+  .info-desc-vermas{
+    font-size:.88rem; font-weight:700; color:var(--ambar-texto); cursor:pointer;
+    margin:0 0 16px; display:inline-block;
+  }
+
+  /* ---------- Resumen de la tienda (visible directo en la página, sin abrir panel) ---------- */
+  .tienda-resumen{ padding:2px 16px 14px; }
+  .tienda-resumen-direccion{
+    font-size:.82rem; color:var(--gris); margin-bottom:6px;
+    display:flex; align-items:flex-start; gap:6px;
+  }
+  .tienda-resumen-desc{
+    font-size:.85rem; color:var(--gris); line-height:1.5; margin:0;
+  }
+  .tienda-resumen-desc.clamped{
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  }
+  .tienda-resumen-vermas{
+    font-size:.85rem; font-weight:700; color:var(--ambar-texto); cursor:pointer; margin-top:2px; display:inline-block;
+  }
+  .info-row{ display:flex; align-items:flex-start; gap:12px; margin-bottom:14px; }
+  .info-row .info-icon{
+    width:38px; height:38px; border-radius:50%; background:var(--acero-claro);
+    display:flex; align-items:center; justify-content:center; font-size:1.05rem; flex-shrink:0;
+  }
+  .info-row .info-text{ font-size:.88rem; color:var(--tinta); padding-top:8px; line-height:1.4; }
+  .info-row .info-text b{ font-weight:700; }
+  .info-contact-btn{
+    display:flex; align-items:center; gap:10px; padding:12px 14px; border-radius:12px;
+    background:var(--acero-claro); color:var(--carbon); font-weight:700; font-size:.92rem;
+    text-decoration:none; margin-bottom:6px;
+  }
+  .info-social-row{ display:flex; gap:10px; margin-top:6px; }
+  .info-social-row a{
+    width:42px; height:42px; border-radius:50%; background:var(--acero-claro);
+    display:flex; align-items:center; justify-content:center; font-size:1.15rem;
+    text-decoration:none; color:var(--carbon);
+  }
+  .info-section-label{ font-size:.78rem; color:var(--gris); text-transform:uppercase; letter-spacing:.03em; margin:18px 0 8px; }
+  .moneda-selector{
+    display:flex; align-items:center; gap:8px; padding:12px 14px; border-radius:12px;
+    background:var(--crema); border:1px solid var(--linea); cursor:pointer; margin-top:4px;
+  }
+  .moneda-selector .flag{ font-size:1.2rem; }
+  .moneda-selector .codigo{ font-weight:700; font-size:.92rem; color:var(--tinta); flex:1; }
+  .moneda-selector .chevron{ color:var(--gris); font-size:.8rem; transition:transform .15s; }
+  .moneda-selector.abierto .chevron{ transform:rotate(180deg); }
+  .moneda-opciones{ margin-top:6px; border-radius:12px; overflow:hidden; border:1px solid var(--linea); display:none; }
+  .moneda-opciones.show{ display:block; }
+  .moneda-opciones .opcion{
+    display:flex; align-items:center; gap:10px; padding:12px 14px; font-size:.9rem;
+    cursor:pointer; background:var(--blanco);
+  }
+  .moneda-opciones .opcion + .opcion{ border-top:1px solid var(--linea); }
+  .moneda-opciones .opcion.selected{ background:var(--acero-claro); font-weight:700; color:var(--carbon); }
+
+
+  /* ---------- Modal de detalle de producto ---------- */
+  .detalle-foto{
+    width:100%; aspect-ratio:1/1; border-radius:16px; margin-bottom:14px;
+    background:var(--acero-claro);
+    display:flex; align-items:center; justify-content:center;
+    overflow:hidden; position:relative;
+  }
+  .detalle-foto img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .detalle-foto .foto-placeholder{ font-size:3.2rem; }
+  .detalle-galeria{
+    display:flex; gap:8px; overflow-x:auto; padding-bottom:4px; margin:-8px 0 14px;
+    scrollbar-width:none;
+  }
+  .detalle-galeria::-webkit-scrollbar{ display:none; }
+  .detalle-galeria-item{
+    flex:0 0 auto; width:64px; height:64px; border-radius:10px; overflow:hidden;
+    border:2px solid transparent; cursor:pointer; background:var(--acero-claro);
+  }
+  .detalle-galeria-item.activa{ border-color:var(--ambar); }
+  .detalle-galeria-item img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .detalle-descripcion{
+    font-size:.86rem; line-height:1.5; color:var(--acero); margin-top:14px;
+    white-space:pre-line;
+  }
+  .detalle-descripcion-titulo{ font-weight:700; color:var(--tinta); font-size:.82rem; margin-bottom:4px; text-transform:uppercase; letter-spacing:.02em; }
+  .detalle-relacionados{ margin-top:20px; }
+  .detalle-relacionados h3{ font-size:.9rem; margin:0 0 10px; color:var(--tinta); }
+  .detalle-relacionados .novedades-scroll{ margin:0 -18px; padding:0 18px; }
+  .btn-compartir{
+    width:100%; padding:13px; margin-top:14px;
+    border:1.5px solid var(--carbon); background:transparent; color:var(--carbon);
+    border-radius:12px; font-size:.9rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    cursor:pointer;
+  }
+  .btn-compartir:active{ opacity:.75; }
+
+  /* ---------- Pantallas de carga / error ---------- */
+  .pantalla-error{
+    position:fixed; inset:0; background:var(--crema);
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:14px; z-index:999; padding:24px; text-align:center;
+  }
+  @keyframes girar{ to{ transform:rotate(360deg); } }
+  .pantalla-error .icono-error{ font-size:2.6rem; }
+  .pantalla-error h2{ font-size:1.1rem; }
+  .pantalla-error p{ color:var(--gris); font-size:.86rem; max-width:280px; margin:0; }
+  .btn-reintentar{
+    background:var(--carbon); color:#fff; border:none; padding:12px 26px;
+    border-radius:999px; font-size:.9rem; font-weight:600; cursor:pointer;
+  }
+  .btn-reintentar:active{ opacity:.85; }
+
+  /* ---------- Splash de bienvenida ---------- */
+  .pantalla-carga{
+    position:fixed; inset:0; z-index:999; padding:24px; text-align:center;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px;
+    background:radial-gradient(120% 100% at 50% 0%, #34393F 0%, #20242A 45%, #0A0C0E 100%);
+    transition:opacity .45s ease, transform .45s ease;
+  }
+  .pantalla-carga.splash-exit{ opacity:0; transform:scale(1.06); pointer-events:none; }
+  .splash-icon-wrap{
+    width:86px; height:86px; border-radius:24px;
+    background:rgba(255,255,255,.14);
+    display:flex; align-items:center; justify-content:center;
+    font-size:42px; overflow:hidden; flex-shrink:0;
+    box-shadow:0 14px 30px rgba(0,0,0,.28);
+    animation:splashFloat 2.4s ease-in-out infinite;
+  }
+  .splash-icon-wrap img{ width:100%; height:100%; object-fit:cover; display:block; }
+  @keyframes splashFloat{
+    0%,100%{ transform:translateY(0) scale(1); }
+    50%{ transform:translateY(-9px) scale(1.05); }
+  }
+  .splash-name{
+    color:#fff; font-size:1.4rem; font-weight:700; letter-spacing:.2px;
+    opacity:0; animation:splashFadeUp .55s ease .1s forwards;
+  }
+  .splash-tag{
+    color:rgba(255,255,255,.72); font-size:.85rem; max-width:260px;
+    opacity:0; animation:splashFadeUp .55s ease .25s forwards;
+  }
+  @keyframes splashFadeUp{
+    from{ opacity:0; transform:translateY(8px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+  .splash-dots{ display:flex; gap:6px; margin-top:4px; }
+  .splash-dots span{
+    width:7px; height:7px; border-radius:50%; background:rgba(255,255,255,.55);
+    animation:splashDot 1.1s ease-in-out infinite;
+  }
+  .splash-dots span:nth-child(2){ animation-delay:.15s; }
+  .splash-dots span:nth-child(3){ animation-delay:.3s; }
+  @keyframes splashDot{
+    0%,80%,100%{ transform:scale(.6); opacity:.4; }
+    40%{ transform:scale(1); opacity:1; }
+  }
+  .texto-carga{ color:rgba(255,255,255,.6); font-size:.78rem; margin-top:2px; }
+
+  #appRoot{ animation:appFadeIn .4s ease; }
+  @keyframes appFadeIn{
+    from{ opacity:0; transform:translateY(10px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+</style>
+</head>
+<body>
+
+<div class="pantalla-carga" id="pantallaCarga">
+  <div class="splash-icon-wrap" id="splashIcon">🛍️</div>
+  <div class="splash-name" id="splashName">Mi Tienda</div>
+  <div class="splash-tag">Elige, arma tu pedido y lo enviamos por WhatsApp</div>
+  <div class="splash-dots"><span></span><span></span><span></span></div>
+  <div class="texto-carga" id="textoCarga">Cargando tienda…</div>
+</div>
+
+<div class="pantalla-error" id="pantallaError" style="display:none;">
+  <div class="icono-error">⚠️</div>
+  <h2>No se pudo cargar la tienda</h2>
+  <p>Revisa tu conexión a internet e intenta de nuevo.</p>
+  <button class="btn-reintentar" id="btnReintentar">Reintentar</button>
+  <button class="btn-reintentar" id="btnCargarArchivo" style="margin-top:10px;background:transparent;border:2px solid currentColor;">📂 Cargar catálogo desde archivo</button>
+  <input type="file" id="inputCargarArchivo" accept="application/json,.json" style="display:none;">
+</div>
+
+<div id="appRoot" style="display:none;">
+
+<div id="offlineBanner" style="display:none;position:sticky;top:0;z-index:50;background:#3a3a3a;color:#fff;text-align:center;font-size:.82rem;padding:6px 10px;">
+  📡 Sin conexión — mostrando lo último que se guardó
+</div>
+
+<div class="banner-ticker" id="bannerTicker" style="display:none;">
+  <div class="banner-ticker-track" id="bannerTickerTrack"></div>
+</div>
+
+<header class="top">
+  <div class="brand-row" id="brandRow" style="cursor:pointer;">
+    <div class="brand-mark" id="brandMark">🛍️</div>
+    <div>
+      <div class="brand-name" id="shopName">Paradise Shop</div>
+      <div class="brand-tag">Elige, arma tu pedido y lo enviamos por WhatsApp</div>
+    </div>
+  </div>
+  <div class="horario-pill" id="horarioPill" style="display:none;">
+    <span class="punto"></span>
+    <span id="horarioTexto"></span>
+  </div>
+  <div class="search-wrap">
+    <span class="search-icon" aria-hidden="true">🔎</span>
+    <input type="text" id="searchInput" placeholder="Buscar producto..." aria-label="Buscar producto">
+    <button class="search-tools-btn" id="btnCompartirTienda" style="right:46px;" title="Compartir esta tienda" aria-label="Compartir esta tienda">📤</button>
+    <button class="search-tools-btn" id="btnHerramientas" title="Calculadora de cable y convertidor de unidades" aria-label="Calculadora de cable y convertidor de unidades">🧮</button>
+  </div>
+</header>
+
+<div class="instalar-banner" id="instalarBanner" style="display:none;">
+  <span>📲 Instala esta tienda en tu teléfono para abrirla más rápido</span>
+  <div class="instalar-banner-btns">
+    <button id="btnInstalarApp">Instalar</button>
+    <button id="btnCerrarInstalar" aria-label="Cerrar aviso de instalación">✕</button>
+  </div>
+</div>
+
+<div class="tienda-resumen" id="tiendaResumen" style="display:none;"></div>
+
+<div class="novedades" id="novedades" style="display:none;">
+  <h2>🆕 Nuevo en <span id="novedadesTiendaNombre">la tienda</span></h2>
+  <div class="novedades-scroll" id="novedadesScroll"></div>
+</div>
+
+<div class="novedades" id="masVendidos" style="display:none;">
+  <h2>🔥 Más vendidos</h2>
+  <div class="novedades-scroll" id="masVendidosScroll"></div>
+</div>
+
+<div class="chips" id="chips"></div>
+
+<div class="controles-lista">
+  <select class="select-orden" id="selectOrden">
+    <option value="">Orden de la tienda</option>
+    <option value="precio-asc">Precio: menor a mayor</option>
+    <option value="precio-desc">Precio: mayor a menor</option>
+    <option value="nombre-asc">Nombre: A-Z</option>
+  </select>
+  <label class="switch-agotados activo" id="switchAgotados">
+    <span class="track"></span>
+    <span id="textoSwitchAgotados">Agotados visibles</span>
+  </label>
+</div>
+
+<div class="grid" id="grid"></div>
+<div class="empty-state" id="emptyState" style="display:none;">
+  <div class="icono">🗂️</div>
+  <div id="emptyStateTexto">No hay productos que coincidan.</div>
+</div>
+<button class="btn-ver-mas" id="btnVerMas" style="display:none;"></button>
+
+<button class="cart-bubble hidden" id="cartBubble">
+  <span class="cart-bubble-label">Ver pedido</span>
+  <span class="cart-bubble-info"><span id="cartCount">0</span> productos<span class="dot">·</span><span id="cartBubbleTotal">0</span></span>
+</button>
+
+<div class="overlay" id="overlay">
+  <div class="sheet">
+    <div class="sheet-head">
+      <h2>Tu pedido</h2>
+      <div style="display:flex;align-items:center;gap:14px;">
+        <button class="cart-clear-btn" id="btnVaciarCarrito" title="Vaciar carrito" style="display:none;background:none;border:none;color:var(--gris);font-size:.82rem;cursor:pointer;padding:4px;">🗑️ Vaciar</button>
+        <button class="close-x" id="closeSheet" aria-label="Cerrar carrito">✕</button>
+      </div>
+    </div>
+    <div class="sheet-body" id="cartList"></div>
+    <div class="sheet-foot">
+      <div class="pago-opciones" id="pagoOpciones" style="display:none;"></div>
+      <div class="pago-opciones" id="entregaOpciones"></div>
+      <textarea id="direccionEntrega" placeholder="Dirección de entrega..." style="display:none;width:100%;margin:8px 0;padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:var(--panel2);color:var(--text);font-family:inherit;font-size:14px;resize:vertical;min-height:44px;"></textarea>
+      <div class="total-row">
+        <span class="label">Total</span>
+        <span class="valor" id="cartTotal">0</span>
+      </div>
+      <button class="btn-whatsapp" id="btnEnviar">📲 Enviar pedido por WhatsApp</button>
+      <button class="btn-cotizacion" id="btnCotizacion">🖼️ Descargar imagen del pedido</button>
+      <div class="nota-envio" id="notaPago" style="display:none;"></div>
+      <div class="nota-envio">Se abrirá WhatsApp con tu pedido ya escrito, listo para enviar.<br>La imagen sirve para mostrarle el pedido a quien tenga que aprobar la compra.</div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="overlayAnalitica">
+  <div class="sheet">
+    <div class="sheet-head">
+      <h2>📊 Analítica de la tienda</h2>
+      <button class="close-x" id="closeAnalitica">✕</button>
+    </div>
+    <div class="sheet-body" id="analiticaBody" style="padding:16px;">
+      <div class="tools-aviso">Cargando datos…</div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="overlayHerramientas">
+  <div class="sheet">
+    <div class="sheet-head">
+      <h2>🧮 Herramientas</h2>
+      <button class="close-x" id="closeHerramientas">✕</button>
+    </div>
+    <div class="sheet-body" style="padding:2px 16px 24px;">
+      <div class="tools-tabs">
+        <button class="tools-tab active" id="tabCable" data-tab="cable">🔌 Calibre de cable</button>
+        <button class="tools-tab" id="tabUnidades" data-tab="unidades">📏 Convertidor</button>
+      </div>
+
+      <div id="panelCable">
+        <div class="tools-field">
+          <label>¿La instalación es de 110V o 220V?</label>
+          <div class="tools-voltaje">
+            <button type="button" class="tools-voltaje-btn active" id="voltaje110" data-v="110">110V</button>
+            <button type="button" class="tools-voltaje-btn" id="voltaje220" data-v="220">220V</button>
+          </div>
+        </div>
+        <div class="tools-field">
+          <label>¿Para qué es? (opcional, llena el amperaje solo)</label>
+          <select id="cableCarga">
+            <option value="">— Elige una carga común o escribe el amperaje abajo —</option>
+          </select>
+        </div>
+        <div class="tools-field">
+          <label>Amperios de la carga (A)</label>
+          <input type="number" id="cableAmps" inputmode="decimal" min="0" step="0.5" placeholder="Ej: 20">
+        </div>
+        <div class="tools-field">
+          <label>...o potencia en Watts, si no sabes los amperios (opcional)</label>
+          <input type="number" id="cableWatts" inputmode="decimal" min="0" step="10" placeholder="Ej: 1500">
+        </div>
+        <div class="tools-field">
+          <label>Distancia del cable, ida (metros) — opcional</label>
+          <input type="number" id="cableDistancia" inputmode="decimal" min="0" step="1" placeholder="Ej: 15">
+        </div>
+        <div id="cableResultado"></div>
+        <div class="tools-productos-label" id="cableProductosLabel" style="display:none;"></div>
+        <div class="tools-mini-list" id="cableProductos"></div>
+        <div class="tools-productos-label" id="breakerProductosLabel" style="display:none;"></div>
+        <div class="tools-mini-list" id="breakerProductos"></div>
+      </div>
+
+      <div id="panelUnidades" style="display:none;">
+        <div class="tools-aviso" style="margin-bottom:14px;">Escribe un valor en cualquier casilla y las demás se actualizan solas.</div>
+        <div class="conv-grid">
+          <div class="tools-field">
+            <label>Milímetros (mm)</label>
+            <input type="number" id="convMm" inputmode="decimal" placeholder="0">
+          </div>
+          <div class="tools-field">
+            <label>Centímetros (cm)</label>
+            <input type="number" id="convCm" inputmode="decimal" placeholder="0">
+          </div>
+          <div class="tools-field">
+            <label>Metros (m)</label>
+            <input type="number" id="convM" inputmode="decimal" placeholder="0">
+          </div>
+          <div class="tools-field">
+            <label>Pulgadas (")</label>
+            <input type="number" id="convPulg" inputmode="decimal" placeholder="0">
+          </div>
+          <div class="tools-field">
+            <label>Pies (ft)</label>
+            <input type="number" id="convPie" inputmode="decimal" placeholder="0">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="overlayInfoTienda">
+  <div class="sheet">
+    <div class="sheet-head">
+      <h2 id="infoTiendaNombre">Info de la tienda</h2>
+      <button class="close-x" id="closeInfoTienda">✕</button>
+    </div>
+    <div class="sheet-body" id="infoTiendaBody" style="padding:2px 16px 20px;"></div>
+  </div>
+</div>
+
+<div class="overlay" id="overlayProducto">
+  <div class="sheet">
+    <div class="sheet-head">
+      <h2>Detalle</h2>
+      <button class="close-x" id="cerrarDetalle" aria-label="Cerrar detalle del producto">✕</button>
+    </div>
+    <div class="sheet-body">
+      <div class="detalle-foto foto-wrap" id="detalleFoto"></div>
+      <div class="detalle-galeria" id="detalleGaleria" style="display:none;"></div>
+      <div class="card-cat" id="detalleCat"></div>
+      <h2 id="detalleNombre" style="font-size:1.05rem;margin:4px 0 8px;font-family:inherit;"></h2>
+      <div class="price-row" id="detallePrecios" style="margin-bottom:14px;"></div>
+      <div class="add-row" id="detalleAddRow" style="justify-content:flex-start;gap:14px;"></div>
+      <div class="detalle-descripcion" id="detalleDescripcion" style="display:none;"></div>
+      <div class="detalle-relacionados" id="detalleRelacionados" style="display:none;">
+        <h3>También te puede interesar</h3>
+        <div class="novedades-scroll" id="detalleRelacionadosScroll"></div>
+      </div>
+      <div style="display:flex;gap:10px;">
+        <button class="btn-compartir" id="btnCompartirProducto" style="flex:1;">📤 Compartir por WhatsApp</button>
+        <button class="btn-compartir" id="btnFavProducto" style="flex:0 0 52px;" aria-label="Guardar en favoritos" aria-pressed="false">🤍</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /appRoot -->
+
+<script>
+// El navegador solo guarda datos de las últimas 250 descargas (Resource
+// Timing) por defecto — con un catálogo de cientos de fotos eso se llena
+// rápido y se perderían los datos que usa fotoCargada() para detectar fotos
+// rotas de imgbb. Se agranda el margen bien temprano, antes de que se cargue
+// ninguna foto.
+try{ if(performance.setResourceTimingBufferSize) performance.setResourceTimingBufferSize(2000); }catch(e){}
+// ---- Aviso de "sin conexión" ----
+// Cuba tiene cortes de señal frecuentes; sin este aviso, si se pierde la
+// conexión a mitad de la visita, el catálogo se queda quieto (ya no se
+// refresca cada 2 min) sin ninguna pista de por qué — parece que el sitio
+// dejó de andar. 'online'/'offline' del navegador cubre WiFi/datos apagados;
+// la carga inicial ya tiene su propio aviso de conexión lenta (ver loadProducts).
+function actualizarAvisoConexion(){
+  const banner = document.getElementById("offlineBanner");
+  if(banner) banner.style.display = navigator.onLine ? "none" : "block";
+}
+window.addEventListener("online", actualizarAvisoConexion);
+window.addEventListener("offline", actualizarAvisoConexion);
+document.addEventListener("DOMContentLoaded", actualizarAvisoConexion);
+// ---- Colores de marca configurables desde el catálogo ----
+// José elige 2 colores (primario/acento) en la app de gestión; acá se
+// calculan automáticamente las variantes claras/oscuras que usan los
+// degradados de la interfaz, para que TODO combine con esos 2 colores y no
+// se quede con restos del naranja/gris por defecto. La portada (splash de
+// carga) queda fija a propósito y no se toca con esto.
+function hexToRgb(hex){
+  hex = (hex || "").replace("#", "");
+  if(hex.length === 3) hex = hex.split("").map(c => c + c).join("");
+  const num = parseInt(hex, 16);
+  if(isNaN(num)) return null;
+  return { r: (num >> 16) & 255, g: (num >> 8) & 255, b: num & 255 };
+}
+function mezclarColor(hex, hexObjetivo, cantidad){
+  const a = hexToRgb(hex), b = hexToRgb(hexObjetivo);
+  if(!a || !b) return hex;
+  const r = Math.round(a.r + (b.r - a.r) * cantidad);
+  const g = Math.round(a.g + (b.g - a.g) * cantidad);
+  const bl = Math.round(a.b + (b.b - a.b) * cantidad);
+  return "#" + [r, g, bl].map(v => v.toString(16).padStart(2, "0")).join("");
+}
+function aplicarColoresMarca(primario, acento){
+  const root = document.documentElement.style;
+  if(primario){
+    root.setProperty("--carbon", primario);
+    root.setProperty("--carbon-claro", mezclarColor(primario, "#FFFFFF", 0.18));
+    root.setProperty("--carbon-oscuro", mezclarColor(primario, "#000000", 0.55));
+  }
+  if(acento){
+    root.setProperty("--ambar", acento);
+    root.setProperty("--ambar-claro", mezclarColor(acento, "#FFFFFF", 0.28));
+    root.setProperty("--ambar-oscuro", mezclarColor(acento, "#000000", 0.28));
+    root.setProperty("--ambar-texto", mezclarColor(acento, "#000000", 0.42));
+    const rgb = hexToRgb(acento);
+    if(rgb) root.setProperty("--ambar-rgb", `${rgb.r},${rgb.g},${rgb.b}`);
+  }
+}
+
+/* =========================================================
+   CONFIGURACIÓN — edita estos valores para tu tienda
+   ========================================================= */
+const CONFIG = {
+  // Valores por defecto — SOLO se usan si aún no sincronizaste tu catálogo
+  // (o mientras usas productos.json local). En cuanto sincronices desde tu
+  // app, el nombre de tienda, WhatsApp y moneda que configures en Ajustes ahí
+  // pisan estos valores automáticamente. No hace falta editar este archivo.
+  shopName: "Toto Tools",
+  logo: "data:image/webp;base64,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",  // logo por defecto (se ve mientras carga o si aún no sincronizaste); si tu app envía otro logo por Firebase, ese pisa a este.
+  whatsappNumber: "",
+  currency: "$",
+  mensajePedido: "",  // primera línea del mensaje de WhatsApp; vacío = usa el texto por defecto
+  infoPago: "",       // forma de pago / notas, se muestra en el carrito y se agrega al mensaje
+  horaApertura: "",   // "HH:MM" — vacío = no se muestra el horario
+  horaCierre: "",      // "HH:MM"
+  diasAbierto: [0,1,2,3,4,5,6], // 0=domingo … 6=sábado. Por defecto, abierto todos los días.
+  descuentoEfectivo: 0, // % de descuento si el cliente paga en efectivo (0 = sin descuento, no se muestra la opción)
+
+  // Pago en otra moneda (ej: tus precios están en CUP y quieres ofrecer pagar en USD).
+  // secondaryCurrency = nombre de la otra moneda ("USD"). exchangeRate = cuántas unidades
+  // de tu moneda principal (currency) equivalen a 1 unidad de secondaryCurrency
+  // (ej: si 1 USD = 670 CUP, pon exchangeRate: 670). Déjalo en 0 para no mostrar la opción.
+  // Si sincronizas desde tu app y ella publica estos mismos campos en Firebase, se
+  // actualizan solos; si no, edítalos aquí a mano cuando cambie la tasa.
+  secondaryCurrency: "USD",
+  exchangeRate: 0,
+
+  // Info de la tienda (se muestra al tocar el nombre/logo arriba). Deja vacío
+  // lo que no quieras mostrar — esa fila simplemente no aparece.
+  description: "",     // texto sobre la tienda
+  address: "",         // ej: "Santiago de Cuba, Santiago de Cuba"
+  deliveryText: "",    // ej: "Entregamos a domicilio" — vacío = no se muestra
+  facebookUrl: "",     // link a tu página de Facebook, vacío = no se muestra
+  instagramUrl: "",    // link a tu Instagram, vacío = no se muestra
+
+  // Cinta deslizante arriba del catálogo (ej: "30% de descuento pagando en
+  // efectivo"). bannerEnabled la muestra/oculta; bannerText es tu mensaje.
+  // Las monedas (currency + secondaryCurrency, si la tienes) se agregan solas
+  // al final del texto — no hace falta escribirlas aquí ni en tu app.
+  bannerEnabled: false,
+  bannerText: "",
+
+  // Alerta de "poca cantidad" (⚡ ¡Últimas X unidades!) en las tarjetas de un
+  // producto, cuando tu app envía cuántas unidades quedan de él. Se pisa solo
+  // si sincronizas desde tu app (misma configuración que el ⚡ de las fotos).
+  lowStockEnabled: true,
+  lowStockThreshold: 2,
+
+  // Deja esto vacío ("") si vas a usar un productos.json local (modo manual).
+  // Si activaste la sincronización automática en tu app del catálogo, pon aquí
+  // la misma URL de Firebase Realtime Database que pusiste allá (Config →
+  // Sitio web → "URL de Firebase Realtime Database") — el sitio leerá
+  // siempre la última versión.
+  firebaseDbUrl: "https://catalogo-7f269-default-rtdb.europe-west1.firebasedatabase.app",
+
+  // PROXY (para que tus clientes en Cuba NO necesiten VPN) ------------------
+  // Firebase (*.firebasedatabase.app) suele estar bloqueado sin VPN. La
+  // solución es que el navegador del cliente NUNCA hable directo con Firebase:
+  // en su lugar le habla a una function de Netlify que vive en TU MISMO
+  // dominio (ese sí es accesible sin VPN), y esa function reenvía la
+  // petición a Firebase desde el servidor de Netlify (que no tiene el
+  // bloqueo). Ver netlify/functions/firebase-proxy.js (instrucciones al
+  // final de este archivo).
+  //
+  // Déjalo en true una vez que subas esa function. Si lo dejas en false, el
+  // sitio funciona exactamente igual que antes (Firebase directo).
+  usarProxy: true,
+  proxyPath: "/.netlify/functions/firebase-proxy",
+
+  productsFile: "./productos.json" // se usa solo si firebaseDbUrl está vacío
+};
+
+// Construye la URL a usar para hablar con Firebase Realtime Database. Con el
+// proxy activado, apunta a tu propio dominio (nunca bloqueado en Cuba) y la
+// function de Netlify traduce la petición a Firebase por detrás. Si no,
+// se comporta exactamente como antes (Firebase directo).
+function dbUrl(path){
+  if(CONFIG.usarProxy && CONFIG.proxyPath){
+    return `${CONFIG.proxyPath}?path=${encodeURIComponent(path)}`;
+  }
+  return `${CONFIG.firebaseDbUrl}${path}`;
+}
+
+let PRODUCTS = [];
+let cargaInicialCompleta = false; // true en cuanto el catálogo real se mostró al menos una vez
+let cart = {};          // { productId: cantidad }
+let activeCategory = "Todos";
+let searchTerm = "";
+
+/* ---------- Búsqueda inteligente: vocabulario técnico / sinónimos regionales ----------
+   Los clientes no siempre buscan por el nombre "de catálogo": "perica" en vez
+   de "llave ajustable", "planta" en vez de "generador", etc. Este diccionario
+   traduce lo que la gente escribe a las palabras que sí deben estar en el
+   nombre/categoría/etiquetas del producto para que aparezca en los resultados.
+
+   Cómo agregar más: cada línea es "lo que escribe el cliente": [lista de
+   palabras oficiales a buscar]. Se pueden agregar varias variantes por
+   producto. No hace falta tildes (la búsqueda ya ignora acentos sola). */
+const SINONIMOS_BUSQUEDA = {
+  "perica": ["llave ajustable", "llave inglesa", "llave perica"],
+  "planta": ["generador", "planta electrica"],
+  "chicharra": ["taladro percutor", "rotomartillo", "taladro de impacto"],
+  "rotomartillo": ["taladro percutor"],
+  "playa": ["pinza", "alicate"],
+  "playo": ["pinza", "alicate"],
+  "pico": ["pico de loro", "alicate de presion"],
+  "esmeril": ["amoladora", "pulidora"],
+  "amoladora": ["esmeril", "pulidora"],
+  "flexometro": ["cinta metrica"],
+  "cinta metrica": ["flexometro"],
+  "breaker": ["disyuntor", "flipon", "termomagnetico", "interruptor termico"],
+  "flipon": ["breaker", "disyuntor"],
+  "disyuntor": ["breaker", "flipon"],
+  "cautin": ["soldador de estano"],
+  "soplete": ["quemador", "antorcha"],
+  "manguera": ["manguera de jardin", "manguera de agua"],
+  "bomba": ["bomba de agua", "motobomba"],
+  "motobomba": ["bomba de agua"],
+  "guante": ["guantes de trabajo", "guantes de seguridad"],
+  "careta": ["mascara de soldar", "careta de soldar"],
+  "candado": ["cerradura"],
+  "brocha": ["pincel"],
+  "espatula": ["llana", "cuchara de albañil"],
+  "llana": ["espatula"],
+  "cuchara": ["llana", "espatula"],
+  "wincha": ["cinta metrica", "flexometro"],
+  "taipe": ["cinta aislante"],
+  "cinta aislante": ["taipe"],
+  "tornillo": ["tornillos"],
+  "clavo": ["clavos"],
+  "foco": ["bombillo", "lampara"],
+  "bombillo": ["foco", "lampara led"],
+  "lampara": ["foco", "bombillo"]
+};
+
+// Dado lo que escribió el cliente, devuelve la lista de términos a buscar:
+// el término tal cual, más las palabras oficiales de cualquier entrada del
+// diccionario cuyo alias aparezca dentro de lo escrito (o viceversa, para
+// que "llave peric" sin terminar de escribir "perica" también funcione).
+function expandirTerminoBusqueda(term){
+  const terminos = new Set([term]);
+  for(const alias in SINONIMOS_BUSQUEDA){
+    if(term.includes(alias) || alias.includes(term)){
+      SINONIMOS_BUSQUEDA[alias].forEach(oficial => terminos.add(normalizarTexto(oficial)));
+    }
+  }
+  return [...terminos];
+}
+let searchDebounceTimer = null;
+let mostrarAgotados = true; // el cliente puede ocultar los agotados con el interruptor
+let ordenActual = "";        // "" | "precio-asc" | "precio-desc" | "nombre-asc"
+let metodoPago = "transferencia"; // "transferencia" (precio normal) | "efectivo" (con descuento) | "usd"
+let metodoEntrega = "tienda"; // "tienda" (recogida) | "domicilio" (envío)
+let productoDetalleActual = null; // producto que está abierto en el modal de detalle
+let monedaMostrada = ""; // "" = usa CONFIG.currency (moneda por defecto); si el cliente elige otra, se guarda aquí
+
+/* ---------- Moneda en que se muestran los precios (el cliente puede cambiarla) ---------- */
+function monedaActual(){ return monedaMostrada || CONFIG.currency; }
+function cargarMonedaGuardada(){
+  try{
+    const guardada = localStorage.getItem("monedaMostrada");
+    monedaMostrada = (guardada && guardada !== CONFIG.currency) ? guardada : "";
+  }catch(e){ monedaMostrada = ""; }
+  if(monedaMostrada === CONFIG.secondaryCurrency && CONFIG.exchangeRate > 0) metodoPago = "usd";
+}
+function fijarMoneda(cod){
+  monedaMostrada = (cod === CONFIG.currency) ? "" : cod;
+  try{ localStorage.setItem("monedaMostrada", cod); }catch(e){ /* se ignora */ }
+  // si el cliente elige ver en la moneda secundaria, damos por hecho que también
+  // quiere pagar en esa moneda; si vuelve a la principal, regresamos a transferencia
+  if(cod === CONFIG.secondaryCurrency && CONFIG.exchangeRate > 0) metodoPago = "usd";
+  else if(metodoPago === "usd") metodoPago = "transferencia";
+  render();
+  renderInfoTienda();
+  renderResumenTienda();
+  if(document.getElementById("overlay").classList.contains("show")) renderCartSheet();
+}
+function precioConvertido(price){
+  if(monedaActual() === CONFIG.currency || !CONFIG.exchangeRate) return price;
+  // Pagar en la moneda secundaria (USD) se trata como pago en efectivo:
+  // si hay descuento por efectivo configurado, se aplica antes de convertir.
+  const base = CONFIG.descuentoEfectivo > 0 ? price * (1 - CONFIG.descuentoEfectivo / 100) : price;
+  return Math.round((base / CONFIG.exchangeRate) * 100) / 100;
+}
+function precioTexto(price){
+  return `${monedaActual()} ${fmt(precioConvertido(price))}`;
+}
+
+/* ---------- Carrito persistente (sobrevive a cerrar el navegador) ---------- */
+function guardarCarrito(){
+  try{ localStorage.setItem("carritoPedido", JSON.stringify(cart)); }catch(e){ /* almacenamiento no disponible, se ignora */ }
+}
+function cargarCarritoGuardado(){
+  try{
+    const raw = localStorage.getItem("carritoPedido");
+    if(raw) cart = JSON.parse(raw) || {};
+  }catch(e){ cart = {}; }
+}
+cargarCarritoGuardado();
+
+/* ---------- Favoritos (lista de "para después", separada del carrito) ---------- */
+let favoritos = new Set();
+function guardarFavoritos(){
+  try{ localStorage.setItem("favoritosTienda", JSON.stringify([...favoritos])); }catch(e){ /* sin almacenamiento, se ignora */ }
+}
+function cargarFavoritosGuardados(){
+  try{
+    const raw = localStorage.getItem("favoritosTienda");
+    favoritos = new Set(raw ? JSON.parse(raw) : []);
+  }catch(e){ favoritos = new Set(); }
+}
+function esFavorito(id){ return favoritos.has(id); }
+function toggleFavorito(id, btnEl){
+  if(favoritos.has(id)) favoritos.delete(id); else favoritos.add(id);
+  guardarFavoritos();
+  const activo = favoritos.has(id);
+  const etiqueta = activo ? "Quitar de favoritos" : "Guardar en favoritos";
+  if(btnEl){
+    btnEl.classList.toggle("activo", activo);
+    btnEl.textContent = activo ? "❤️" : "🤍";
+    btnEl.setAttribute("aria-label", etiqueta);
+    btnEl.setAttribute("aria-pressed", activo ? "true" : "false");
+  }
+  // Si el producto también está abierto en la tarjeta de la grilla o en el
+  // detalle, se actualiza ese corazón también (aunque no sea el que se tocó).
+  const cardBtn = document.querySelector(`.card[data-id="${id}"] [data-role="fav"]`);
+  if(cardBtn && cardBtn !== btnEl){
+    cardBtn.classList.toggle("activo", activo);
+    cardBtn.textContent = activo ? "❤️" : "🤍";
+    cardBtn.setAttribute("aria-label", etiqueta);
+    cardBtn.setAttribute("aria-pressed", activo ? "true" : "false");
+  }
+  const detalleBtn = document.getElementById("btnFavProducto");
+  if(detalleBtn && detalleBtn !== btnEl && productoDetalleActual && productoDetalleActual.id === id){
+    detalleBtn.textContent = activo ? "❤️" : "🤍";
+    detalleBtn.setAttribute("aria-label", etiqueta);
+    detalleBtn.setAttribute("aria-pressed", activo ? "true" : "false");
+  }
+  // El chip "Favoritos" aparece/desaparece y su contador cambia; si
+  // estábamos viendo ese filtro, la lista también debe actualizarse ya.
+  buildChips();
+  if(activeCategory === "__favoritos__") render();
+}
+cargarFavoritosGuardados();
+
+/* ============================================================
+   ANALÍTICA: qué buscan y no encuentran, qué ven y no compran,
+   y carritos que se quedan a medias. Todo se manda a Firebase (mismo
+   proyecto donde tu app ya publica el catálogo) para que puedas verlo
+   luego desde el panel oculto (toca 5 veces el nombre de la tienda).
+
+   IMPORTANTE — esto necesita permiso de ESCRITURA pública en Firebase
+   para el nodo "analitica" (el nodo "catalogo" puede seguir protegido
+   como ya lo tienes). En las reglas de tu Realtime Database, agrega:
+     "analitica": { ".read": true, ".write": true }
+   Si no agregas esa regla, estos envíos van a fallar en silencio (el
+   sitio sigue funcionando normal, simplemente no queda registro). ============================================================ */
+let pedidoYaEnviado = false;
+let carritoAbandonadoRegistrado = false;
+
+function analiticaDisponible(){ return !!CONFIG.firebaseDbUrl; }
+
+// "Fire and forget": si falla (sin permiso, sin internet, etc.) no rompe
+// nada en el sitio — el cliente ni se entera.
+function trackEvento(tipo, datos){
+  if(!analiticaDisponible()) return;
+  try{
+    fetch(dbUrl(`/analitica/${tipo}.json`), {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ...datos, ts: Date.now() })
+    }).catch(() => {});
+  }catch(e){ /* silencioso a propósito */ }
+}
+
+// Se llama desde render() cuando una búsqueda da 0 resultados. Se guarda un
+// registro por término distinto por sesión (no uno por cada tecla que
+// escriben) para no inundar la base de datos.
+const busquedasSinResultadoYaRegistradas = new Set();
+function trackBusquedaSinResultado(term){
+  if(!term || busquedasSinResultadoYaRegistradas.has(term)) return;
+  busquedasSinResultadoYaRegistradas.add(term);
+  trackEvento("busquedasSinResultado", { term });
+}
+
+// Se llama al abrir el detalle de un producto.
+function trackVistaProducto(p){
+  trackEvento("vistasProducto", { id: p.id, name: p.name });
+}
+
+// Se llama cuando un producto pasa de 0 a >0 unidades en el carrito.
+function trackAgregarCarrito(p){
+  trackEvento("agregadosCarrito", { id: p.id, name: p.name });
+}
+
+// Si el cliente agregó productos al carrito y cierra/abandona la pestaña sin
+// haber tocado "Enviar pedido", se registra una sola vez (por sesión) para
+// saber qué se quedó "a medias".
+function registrarCarritoAbandonadoSiAplica(){
+  if(pedidoYaEnviado || carritoAbandonadoRegistrado) return;
+  const ids = Object.keys(cart);
+  if(!ids.length) return;
+  carritoAbandonadoRegistrado = true;
+  const items = ids.map(id => {
+    const p = PRODUCTS.find(x => x.id === id);
+    return p ? { id: p.id, name: p.name, qty: cart[id] } : null;
+  }).filter(Boolean);
+  const total = items.reduce((sum, it) => {
+    const p = PRODUCTS.find(x => x.id === it.id);
+    return sum + (p ? p.price * it.qty : 0);
+  }, 0);
+  trackEvento("carritosAbandonados", { items, total, moneda: CONFIG.currency });
+}
+document.addEventListener("visibilitychange", () => {
+  if(document.visibilityState === "hidden") registrarCarritoAbandonadoSiAplica();
+});
+window.addEventListener("pagehide", registrarCarritoAbandonadoSiAplica);
+
+/* ---------- Dispositivo y calidad de conexión de cada visita ----------
+   Un registro por sesión (no por cada clic) con: tipo de dispositivo
+   (Android/iPhone/iPad/PC), y si el navegador lo informa, el tipo de
+   conexión (4g/3g/2g/wifi) y la velocidad estimada. Sirve para saber si
+   conviene aligerar más las fotos del catálogo. No todos los navegadores
+   dan el dato de conexión (Safari/iPhone normalmente no lo da) — en esos
+   casos se manda solo el tipo de dispositivo. */
+function detectarDispositivo(){
+  const ua = navigator.userAgent || "";
+  if(/iPhone/i.test(ua)) return "iPhone";
+  if(/iPad/i.test(ua)) return "iPad";
+  if(/Android/i.test(ua)) return "Android";
+  if(/Macintosh|Windows|Linux/i.test(ua)) return "PC";
+  return "Otro";
+}
+function trackSesion(){
+  const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  trackEvento("sesiones", {
+    dispositivo: detectarDispositivo(),
+    conexionTipo: conn && conn.effectiveType ? conn.effectiveType : null, // "4g","3g","2g","slow-2g"
+    conexionMbps: conn && typeof conn.downlink === "number" ? conn.downlink : null,
+    ahorroDatos: conn && conn.saveData === true ? true : false
+  });
+}
+trackSesion();
+
+document.getElementById("shopName").textContent = CONFIG.shopName;
+
+/* ---------- Panel oculto de analítica (5 toques en el nombre de la tienda) ---------- */
+let toquesShopName = 0;
+let toquesShopNameTimer = null;
+document.getElementById("shopName").addEventListener("click", () => {
+  toquesShopName++;
+  clearTimeout(toquesShopNameTimer);
+  toquesShopNameTimer = setTimeout(() => { toquesShopName = 0; }, 1500);
+  if(toquesShopName >= 5){
+    toquesShopName = 0;
+    abrirAnalitica();
+  }
+});
+document.getElementById("closeAnalitica").onclick = () => {
+  document.getElementById("overlayAnalitica").classList.remove("show");
+};
+document.getElementById("overlayAnalitica").onclick = (e) => {
+  if(e.target.id === "overlayAnalitica") document.getElementById("overlayAnalitica").classList.remove("show");
+};
+
+async function abrirAnalitica(){
+  const overlay = document.getElementById("overlayAnalitica");
+  const body = document.getElementById("analiticaBody");
+  overlay.classList.add("show");
+  if(!analiticaDisponible()){
+    body.innerHTML = `<div class="tools-aviso">Esta tienda no tiene Firebase configurado, así que no hay datos que mostrar.</div>`;
+    return;
+  }
+  body.innerHTML = `<div class="tools-aviso">Cargando datos…</div>`;
+  try{
+    const res = await fetch(dbUrl(`/analitica.json`));
+    const data = await res.json();
+    body.innerHTML = renderAnaliticaHtml(data || {});
+  }catch(e){
+    body.innerHTML = `<div class="tools-aviso">⚠️ No se pudo cargar (revisa tu conexión, o que las reglas de Firebase permitan leer "analitica").</div>`;
+  }
+}
+
+function renderAnaliticaHtml(data){
+  const busquedas = Object.values(data.busquedasSinResultado || {});
+  const vistas = Object.values(data.vistasProducto || {});
+  const agregados = Object.values(data.agregadosCarrito || {});
+  const abandonados = Object.values(data.carritosAbandonados || {}).sort((a,b) => (b.ts||0) - (a.ts||0));
+  const pedidos = Object.values(data.pedidosEnviados || {});
+  const sesiones = Object.values(data.sesiones || {});
+
+  // Top búsquedas sin resultado, contadas por término.
+  const conteoBusquedas = {};
+  busquedas.forEach(b => { const t = (b.term||"").trim(); if(t) conteoBusquedas[t] = (conteoBusquedas[t]||0) + 1; });
+  const topBusquedas = Object.entries(conteoBusquedas).sort((a,b) => b[1]-a[1]).slice(0, 15);
+
+  // Vistas vs. agregados por producto, para ver qué se mira mucho y se
+  // compra poco (posible problema de precio o de descripción).
+  const conteoVistas = {}, conteoAgregados = {}, nombreProducto = {};
+  vistas.forEach(v => { if(!v.id) return; conteoVistas[v.id] = (conteoVistas[v.id]||0)+1; nombreProducto[v.id] = v.name; });
+  agregados.forEach(a => { if(!a.id) return; conteoAgregados[a.id] = (conteoAgregados[a.id]||0)+1; nombreProducto[a.id] = a.name; });
+  const productosConVistas = Object.keys(conteoVistas)
+    .map(id => ({ id, name: nombreProducto[id] || id, vistas: conteoVistas[id], agregados: conteoAgregados[id] || 0 }))
+    .filter(p => p.vistas >= 2) // ignora ruido de un solo vistazo
+    .sort((a,b) => (b.vistas - b.agregados) - (a.vistas - a.agregados))
+    .slice(0, 15);
+
+  const fmtFecha = (ts) => ts ? new Date(ts).toLocaleString("es", {day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}) : "";
+
+  // Reparto por tipo de dispositivo.
+  const conteoDispositivo = {};
+  sesiones.forEach(s => { const d = s.dispositivo || "Desconocido"; conteoDispositivo[d] = (conteoDispositivo[d]||0)+1; });
+  const topDispositivos = Object.entries(conteoDispositivo).sort((a,b) => b[1]-a[1]);
+
+  // Reparto por calidad de conexión (solo cuenta las visitas donde el
+  // navegador sí informó el dato — Safari/iPhone normalmente no lo da).
+  const conteoConexion = {};
+  let sesionesConDato = 0;
+  sesiones.forEach(s => { if(!s.conexionTipo) return; sesionesConDato++; conteoConexion[s.conexionTipo] = (conteoConexion[s.conexionTipo]||0)+1; });
+  const topConexion = Object.entries(conteoConexion).sort((a,b) => b[1]-a[1]);
+  const lentas = (conteoConexion["2g"]||0) + (conteoConexion["slow-2g"]||0) + (conteoConexion["3g"]||0);
+  const pctLentas = sesionesConDato ? Math.round((lentas / sesionesConDato) * 100) : 0;
+
+  return `
+    <h3 style="margin:0 0 6px;font-size:15px;">🔎 Búsquedas sin resultado (${busquedas.length} en total)</h3>
+    <p class="tools-aviso" style="margin-top:0;">Lo que la gente escribe y no encuentra — posible demanda para agregar al catálogo.</p>
+    ${topBusquedas.length ? `<div class="tools-resultado" style="display:block;">
+      ${topBusquedas.map(([t,c]) => `<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--linea, #eee);"><span>${escapeHtml(t)}</span><b>${c}×</b></div>`).join("")}
+    </div>` : `<div class="tools-aviso">Sin datos todavía.</div>`}
+
+    <h3 style="margin:22px 0 6px;font-size:15px;">👀 Se ven mucho, se agregan poco</h3>
+    <p class="tools-aviso" style="margin-top:0;">Productos con más vistas que veces agregadas al carrito — puede ser el precio, la foto o la descripción.</p>
+    ${productosConVistas.length ? `<div class="tools-resultado" style="display:block;">
+      ${productosConVistas.map(p => `<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--linea, #eee);"><span>${escapeHtml(p.name)}</span><b>${p.vistas} vistas · ${p.agregados} agregados</b></div>`).join("")}
+    </div>` : `<div class="tools-aviso">Sin datos todavía.</div>`}
+
+    <h3 style="margin:22px 0 6px;font-size:15px;">🛒 Carritos abandonados (${abandonados.length} en total)</h3>
+    <p class="tools-aviso" style="margin-top:0;">Se guardan cuando alguien agrega productos pero cierra sin enviar el pedido por WhatsApp.</p>
+    ${abandonados.length ? abandonados.slice(0, 20).map(c => `
+      <div style="padding:8px 0;border-bottom:1px solid var(--linea, #eee);">
+        <div style="font-size:.78rem;color:var(--gris,#888);">${fmtFecha(c.ts)} · ${c.moneda||""} ${c.total?Math.round(c.total):""}</div>
+        <div>${(c.items||[]).map(it => `${it.qty}x ${escapeHtml(it.name)}`).join(", ")}</div>
+      </div>
+    `).join("") : `<div class="tools-aviso">Sin datos todavía.</div>`}
+
+    <h3 style="margin:22px 0 6px;font-size:15px;">✅ Pedidos enviados (${pedidos.length} en total)</h3>
+    <p class="tools-aviso" style="margin-top:0;">Nota: solo se registra cuando el cliente confirma "Enviar pedido"; no confirma que el pago se completó.</p>
+
+    <h3 style="margin:22px 0 6px;font-size:15px;">📱 Dispositivos (${sesiones.length} visitas)</h3>
+    ${topDispositivos.length ? `<div class="tools-resultado" style="display:block;">
+      ${topDispositivos.map(([d,c]) => `<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--linea, #eee);"><span>${escapeHtml(d)}</span><b>${c} (${Math.round(c/sesiones.length*100)}%)</b></div>`).join("")}
+    </div>` : `<div class="tools-aviso">Sin datos todavía.</div>`}
+
+    <h3 style="margin:22px 0 6px;font-size:15px;">📶 Calidad de conexión</h3>
+    <p class="tools-aviso" style="margin-top:0;">${sesionesConDato ? `Basado en ${sesionesConDato} visitas donde el navegador informó el dato (iPhone normalmente no lo da).${pctLentas>=30 ? ` <b>${pctLentas}% entran con conexión lenta (2G/3G)</b> — conviene seguir aligerando el peso de las fotos.` : ` Solo ${pctLentas}% entran con conexión lenta.`}` : "Aún no hay datos de conexión (o todas las visitas fueron desde navegadores que no lo informan, como Safari)."}</p>
+    ${topConexion.length ? `<div class="tools-resultado" style="display:block;">
+      ${topConexion.map(([t,c]) => `<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--linea, #eee);"><span>${escapeHtml(t)}</span><b>${c}×</b></div>`).join("")}
+    </div>` : ``}
+  `;
+}
+document.getElementById("splashName").textContent = CONFIG.shopName;
+updateCartBubble(); // refleja de inmediato el carrito recuperado, si había uno
+
+// Muestra el logo que se sincronizó desde la app del catálogo (si lo hay) en
+// el círculo de la esquina superior izquierda (y en la pantalla de bienvenida);
+// si no hay logo configurado, se deja el icono 🛍️ de siempre.
+function aplicarLogo(logoUrl){
+  const mark = document.getElementById("brandMark");
+  const splashIcon = document.getElementById("splashIcon");
+  const contenido = logoUrl ? `<img src="${logoUrl}" alt="Logo" onerror="fotoError(this,'logo')" onload="fotoCargada(this,'logo')">` : "🛍️";
+  if(mark) mark.innerHTML = contenido;
+  if(splashIcon) splashIcon.innerHTML = contenido;
+}
+// Aplica de una vez el logo/nombre por defecto configurados arriba, para que
+// se vean desde el primer instante (splash incluido) sin esperar a Firebase.
+aplicarLogo(CONFIG.logo);
+
+async function loadProducts(){
+  const textoCarga = document.getElementById("textoCarga");
+  // Si la carga se demora, avisamos que seguimos esperando en vez de dejar
+  // el mensaje genérico (útil con conexiones lentas).
+  const avisoLento = setTimeout(() => {
+    if(textoCarga) textoCarga.textContent = "Tu conexión está lenta, seguimos esperando…";
+  }, 10000);
+
+  const url = CONFIG.firebaseDbUrl
+    ? dbUrl(`/catalogo.json`)
+    : CONFIG.productsFile;
+  // Se intenta hasta 2 veces: la primera con un límite de 30s (rápido, para
+  // el caso normal), y si esa se corta por tardanza (no por un error real
+  // del servidor), se reintenta una vez más con 60s. Con mala señal móvil,
+  // un catálogo grande puede tardar más de 30s en bajar completo — antes eso
+  // hacía fallar la carga entera aunque el catálogo estuviera perfectamente
+  // bien, solo lento.
+  const intentos = [30000, 60000];
+  let ultimoError = null;
+  for(let i = 0; i < intentos.length; i++){
+    try{
+      const controller = new AbortController();
+      const abortTimer = setTimeout(() => controller.abort(), intentos[i]);
+      const res = await fetch(url, { cache:"no-store", signal: controller.signal });
+      clearTimeout(abortTimer);
+      if(!res.ok) throw new Error("no se pudo leer el catálogo");
+      const data = await res.json();
+      // Firebase Realtime Database devuelve el objeto directo (o null si está
+      // vacío). jsonbin envolvía todo en {record: {...}}; ya no aplica.
+      aplicarCatalogoCrudo(data);
+      ultimoError = null;
+      break;
+    }catch(e){
+      ultimoError = e;
+      if(i === 0 && textoCarga) textoCarga.textContent = "Tu conexión está lenta, reintentando con más tiempo…";
+    }
+  }
+  if(ultimoError){
+    clearTimeout(avisoLento);
+    // Si nunca llegamos a mostrar la tienda, mostramos la pantalla de error
+    // (nunca un catálogo de ejemplo, para no confundir al cliente).
+    // Si ya la habíamos mostrado antes y esto es solo un refresco fallido,
+    // dejamos la tienda como está y lo intentamos de nuevo en el próximo ciclo.
+    if(!cargaInicialCompleta) mostrarError();
+    if(CONFIG.firebaseDbUrl) setTimeout(loadProducts, 120000);
+    return;
+  }
+  clearTimeout(avisoLento);
+  cargarMonedaGuardada();
+  buildChips();
+  render();
+  // Recalcula el total del carrito ahora que ya tenemos los precios: al
+  // entrar con un pedido guardado, la burbuja se pinta antes de que lleguen
+  // los productos y por eso mostraba "$0" hasta que tocabas algo.
+  updateCartBubble();
+  actualizarHorario();
+  renderBanner();
+  renderNovedades();
+  renderMasVendidos();
+  mostrarContenido();
+  inyectarDatosEstructurados();
+  // Si se entró desde un link de "compartir producto" (?p=ID), se abre esa
+  // ficha directo apenas carga el catálogo, en vez de dejar al que lo
+  // recibió por WhatsApp con que busque el producto él mismo. Solo la
+  // primera vez (cargaInicialCompleta) — los refrescos automáticos cada 2
+  // min no deben reabrir el detalle si el cliente ya está navegando.
+  if(!cargaInicialCompleta){
+    try{
+      const idProductoLink = new URLSearchParams(location.search).get("p");
+      if(idProductoLink){
+        const productoLink = PRODUCTS.find(x => String(x.id) === idProductoLink);
+        if(productoLink) abrirDetalle(productoLink);
+      }
+    }catch(e){ /* si el link viene mal formado, simplemente se ignora */ }
+  }
+  cargaInicialCompleta = true;
+  // Si viene de Firebase (sincronización automática), refresca solo cada 2
+  // minutos para que el sitio quede al día sin que el visitante tenga que recargar.
+  if(CONFIG.firebaseDbUrl) setTimeout(loadProducts, 120000);
+}
+
+// ---------- SEO: datos estructurados (schema.org) ----------
+// Le da a Google info clara de qué vende la tienda y precios, para que en
+// los resultados de búsqueda pueda mostrar más que un link pelado (nombre,
+// precio, si está disponible). Se genera de nuevo cada vez que cambia el
+// catálogo (Firebase actualiza cada 2 min), reemplazando el bloque anterior.
+function inyectarDatosEstructurados(){
+  try{
+    const anterior = document.getElementById("ldJsonProductos");
+    if(anterior) anterior.remove();
+    if(!PRODUCTS || !PRODUCTS.length) return;
+
+    const negocio = {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": CONFIG.shopName || "Tienda",
+      "url": location.href.split("?")[0].split("#")[0]
+    };
+    if(CONFIG.address) negocio.address = CONFIG.address;
+    if(CONFIG.whatsappNumber) negocio.telephone = "+" + CONFIG.whatsappNumber;
+
+    // Limitamos a 40 productos para no inflar el peso del HTML de más.
+    const productosLd = PRODUCTS.slice(0, 40).map(p => ({
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": p.name,
+      "category": p.category || undefined,
+      "image": photoThumbSrc(p) || undefined,
+      "description": (p.description || "").slice(0, 300) || undefined,
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": CONFIG.currency || "USD",
+        "price": Number(p.price) || 0,
+        "availability": p.outOfStock
+          ? "https://schema.org/OutOfStock"
+          : "https://schema.org/InStock"
+      }
+    }));
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "ldJsonProductos";
+    script.textContent = JSON.stringify([negocio, ...productosLd]);
+    document.head.appendChild(script);
+  }catch(e){ /* si algo falla acá, no debe afectar el resto del sitio */ }
+}
+
+
+// mano) y lo vuelca en PRODUCTS/CONFIG. Se separó de loadProducts() para que
+// la carga desde archivo (sin internet) pueda usar exactamente la misma
+// lógica que la carga normal, en vez de duplicarla.
+function aplicarCatalogoCrudo(raw){
+  if(!raw) throw new Error("catálogo vacío");
+  if(Array.isArray(raw)){
+    // productos.json local en modo manual: es un array plano de productos
+    PRODUCTS = raw;
+    renderResumenTienda();
+  }else{
+    // formato que publica la app: { tienda: {...}, productos: [...] }
+    // Desde la sincronización incremental, "productos" en Firebase puede
+    // llegar como diccionario {id: producto} en vez de array (para poder
+    // actualizar un producto sin reescribir todo el catálogo). Se acepta
+    // cualquiera de las dos formas.
+    const productosCrudos = Array.isArray(raw.productos) ? raw.productos : Object.values(raw.productos || {});
+    // Blindaje: si UN producto viene con datos rotos (por ejemplo sin id o
+    // sin nombre, algo que en teoría no debería pasar pero puede colarse por
+    // una sincronización a medias), antes esto tumbaba la carga de TODA la
+    // tienda. Ahora ese producto puntual se descarta y el resto se muestra
+    // igual — un dato malo ya no deja al cliente sin poder comprar nada.
+    PRODUCTS = productosCrudos.filter(p => p && typeof p === "object" && p.id && p.name && typeof p.price === "number");
+    if(raw.tienda){
+     try{
+      if(raw.tienda.name) CONFIG.shopName = raw.tienda.name;
+      if(raw.tienda.whatsapp) CONFIG.whatsappNumber = raw.tienda.whatsapp;
+      if(raw.tienda.currency) CONFIG.currency = raw.tienda.currency;
+      if(raw.tienda.mensajePedido) CONFIG.mensajePedido = raw.tienda.mensajePedido;
+      if(raw.tienda.infoPago) CONFIG.infoPago = raw.tienda.infoPago;
+      if(raw.tienda.horaApertura) CONFIG.horaApertura = raw.tienda.horaApertura;
+      if(raw.tienda.horaCierre) CONFIG.horaCierre = raw.tienda.horaCierre;
+      if(Array.isArray(raw.tienda.diasAbierto) && raw.tienda.diasAbierto.length) CONFIG.diasAbierto = raw.tienda.diasAbierto;
+      if(raw.tienda.descuentoEfectivo) CONFIG.descuentoEfectivo = raw.tienda.descuentoEfectivo;
+      if(raw.tienda.secondaryCurrency) CONFIG.secondaryCurrency = raw.tienda.secondaryCurrency;
+      if(raw.tienda.exchangeRate) CONFIG.exchangeRate = raw.tienda.exchangeRate;
+      if(raw.tienda.description) CONFIG.description = raw.tienda.description;
+      if(raw.tienda.address) CONFIG.address = raw.tienda.address;
+      if(raw.tienda.deliveryText) CONFIG.deliveryText = raw.tienda.deliveryText;
+      if(raw.tienda.facebookUrl) CONFIG.facebookUrl = raw.tienda.facebookUrl;
+      if(raw.tienda.instagramUrl) CONFIG.instagramUrl = raw.tienda.instagramUrl;
+      if(raw.tienda.bannerEnabled !== undefined) CONFIG.bannerEnabled = !!raw.tienda.bannerEnabled;
+      if(raw.tienda.bannerText) CONFIG.bannerText = raw.tienda.bannerText;
+      if(raw.tienda.lowStockEnabled !== undefined) CONFIG.lowStockEnabled = !!raw.tienda.lowStockEnabled;
+      if(raw.tienda.lowStockThreshold !== undefined && raw.tienda.lowStockThreshold !== null) CONFIG.lowStockThreshold = Number(raw.tienda.lowStockThreshold) || 2;
+      document.getElementById("shopName").textContent = CONFIG.shopName;
+      const tagEl = document.querySelector(".brand-tag");
+      if(tagEl && raw.tienda.tagline) tagEl.textContent = raw.tienda.tagline;
+      if(raw.tienda.colorPrimario || raw.tienda.colorAcento) aplicarColoresMarca(raw.tienda.colorPrimario, raw.tienda.colorAcento);
+      // Si Firebase no trae un logo propio, se conserva el logo por defecto
+      // (CONFIG.logo) en vez de volver al ícono genérico 🛍️.
+      aplicarLogo(raw.tienda.logo || CONFIG.logo);
+      renderResumenTienda();
+     }catch(e){
+      // Un dato raro en "tienda" (color mal formado, etc.) no debe tumbar
+      // toda la tienda — se usan los valores que sí se pudieron aplicar y
+      // los que quedan en default, en vez de una pantalla de error total.
+      console.error("Error aplicando datos de tienda (se continúa con lo que sí cargó)", e);
+     }
+    }
+  }
+  if(!PRODUCTS.length) throw new Error("catálogo vacío");
+}
+
+// Carga el catálogo desde el archivo "catalogo-local.json" que se exporta
+// con el botón "Exportar para ver el sitio SIN internet" de la app. Ese
+// archivo trae las fotos incrustadas en el propio JSON (base64), así que
+// esto funciona sin ninguna conexión, incluso si Firebase nunca responde.
+async function cargarCatalogoDesdeArchivo(file){
+  const btn = document.getElementById("btnCargarArchivo");
+  if(btn){ btn.disabled = true; btn.textContent = "Leyendo archivo…"; }
+  try{
+    const texto = await file.text();
+    const raw = JSON.parse(texto);
+    aplicarCatalogoCrudo(raw);
+    cargarMonedaGuardada();
+    buildChips();
+    render();
+    updateCartBubble();
+    actualizarHorario();
+    renderBanner();
+    renderNovedades();
+    renderMasVendidos();
+    mostrarContenido();
+    cargaInicialCompleta = true;
+  }catch(e){
+    console.error("Error cargando catálogo desde archivo", e);
+    alert("No se pudo leer ese archivo como catálogo. Asegúrate de elegir el \"catalogo-local.json\" que exportó la app (botón \"Exportar para ver el sitio SIN internet\").");
+  }finally{
+    if(btn){ btn.disabled = false; btn.textContent = "📂 Cargar catálogo desde archivo"; }
+  }
+}
+
+function mostrarContenido(){
+  const splash = document.getElementById("pantallaCarga");
+  document.getElementById("pantallaError").style.display = "none";
+  if(splash.style.display === "none"){
+    // Ya estaba oculta (ej: un refresco posterior); nada que animar.
+    document.getElementById("appRoot").style.display = "block";
+    return;
+  }
+  // Anima la salida del splash y la entrada del catálogo, en vez del
+  // cambio abrupto de antes.
+  document.getElementById("appRoot").style.display = "block";
+  splash.classList.add("splash-exit");
+  setTimeout(() => { splash.style.display = "none"; }, 450);
+}
+function mostrarError(){
+  document.getElementById("pantallaCarga").style.display = "none";
+  document.getElementById("appRoot").style.display = "none";
+  document.getElementById("pantallaError").style.display = "flex";
+}
+
+/* ---------- Horario de atención ---------- */
+const DIAS_NOMBRE = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+function calcularEstadoHorario(){
+  if(!CONFIG.horaApertura || !CONFIG.horaCierre) return null;
+  // días de la semana en que abre (0=domingo … 6=sábado, como Date.getDay()).
+  // Si no se configuró desde la app, se asume abierto todos los días (comportamiento de antes).
+  const diasAbierto = (CONFIG.diasAbierto && CONFIG.diasAbierto.length) ? CONFIG.diasAbierto : [0,1,2,3,4,5,6];
+  const [ah, am] = CONFIG.horaApertura.split(":").map(Number);
+  const [ch, cm] = CONFIG.horaCierre.split(":").map(Number);
+  const ahora = new Date();
+
+  if(diasAbierto.includes(ahora.getDay())){
+    const abre = new Date(ahora); abre.setHours(ah, am, 0, 0);
+    const cierra = new Date(ahora); cierra.setHours(ch, cm, 0, 0);
+    if(ahora >= abre && ahora < cierra){
+      return { abierto:true, texto:`Abierto · Cierra a las ${CONFIG.horaCierre}` };
+    }
+    if(ahora < abre){
+      // todavía no abre hoy (mismo día, antes de la hora de apertura)
+      const msFalta = abre - ahora;
+      const horas = Math.floor(msFalta / 3600000);
+      const mins = Math.floor((msFalta % 3600000) / 60000);
+      return { abierto:false, texto:`Cerrado · Abre en ${horas}h ${mins}m` };
+    }
+    // si llegamos aquí, ya cerró hoy: se busca el próximo día habilitado abajo
+  }
+
+  // Hoy no toca abrir (o ya cerró): se busca el próximo día de la semana en que
+  // sí abre, saltando los días libres (fines de semana, etc.) en vez de asumir
+  // que mañana es un día normal de trabajo.
+  for(let i = 1; i <= 7; i++){
+    const candidato = new Date(ahora);
+    candidato.setDate(candidato.getDate() + i);
+    if(diasAbierto.includes(candidato.getDay())){
+      const etiquetaDia = i === 1 ? "mañana" : `el ${DIAS_NOMBRE[candidato.getDay()]}`;
+      return { abierto:false, texto:`Cerrado · Abre ${etiquetaDia} a las ${CONFIG.horaApertura}` };
+    }
+  }
+  return { abierto:false, texto:"Cerrado" };
+}
+/* ---------- Cinta deslizante de aviso ---------- */
+function renderBanner(){
+  const wrap = document.getElementById("bannerTicker");
+  const track = document.getElementById("bannerTickerTrack");
+  if(!wrap || !track) return;
+  if(!CONFIG.bannerEnabled){ wrap.style.display = "none"; return; }
+
+  // Solo mencionamos las monedas que la tienda tiene realmente configuradas
+  // (currency siempre; secondaryCurrency solo si está activa con su tasa).
+  const monedas = [CONFIG.currency];
+  if(CONFIG.secondaryCurrency && CONFIG.exchangeRate > 0 && CONFIG.secondaryCurrency !== CONFIG.currency){
+    monedas.push(CONFIG.secondaryCurrency);
+  }
+  const partes = [];
+  if(CONFIG.bannerText) partes.push(CONFIG.bannerText);
+  if(monedas.length) partes.push(monedas.join(" · "));
+  const texto = partes.join(" · ");
+
+  if(!texto){ wrap.style.display = "none"; return; }
+
+  wrap.style.display = "block";
+  track.innerHTML = `<div class="seg"><span>${escapeHtml(texto)}</span></div><div class="seg"><span>${escapeHtml(texto)}</span></div>`;
+}
+
+function actualizarHorario(){
+  const pill = document.getElementById("horarioPill");
+  const texto = document.getElementById("horarioTexto");
+  const estado = calcularEstadoHorario();
+  if(!estado){ pill.style.display = "none"; return; }
+  pill.style.display = "inline-flex";
+  pill.className = "horario-pill " + (estado.abierto ? "abierto" : "cerrado");
+  texto.textContent = estado.texto;
+  const infoTexto = document.getElementById("infoHorarioTexto");
+  if(infoTexto) infoTexto.textContent = estado.texto;
+  const infoTextoResumen = document.getElementById("infoHorarioTextoResumen");
+  if(infoTextoResumen) infoTextoResumen.textContent = estado.texto;
+}
+setInterval(actualizarHorario, 60000); // se recalcula cada minuto sin recargar la página
+
+/* ---------- Filas de info compartidas (horario, dirección, contacto, redes, moneda) ----------
+   Las usan tanto el resumen visible en la página como el panel modal "Info de la tienda",
+   cada uno con su propio juego de ids (sufijo) para no chocar si ambos están en el DOM. */
+function buildInfoExtraHtml(suffix){
+  let html = "";
+  const estado = calcularEstadoHorario();
+  if(estado){
+    html += `<div class="info-row"><div class="info-icon">${estado.abierto ? "🟢" : "🔴"}</div><div class="info-text" id="infoHorarioTexto${suffix}">${escapeHtml(estado.texto)}</div></div>`;
+  }
+  if(CONFIG.address){
+    html += `<div class="info-row"><div class="info-icon">📍</div><div class="info-text">${escapeHtml(CONFIG.address)}</div></div>`;
+  }
+  if(CONFIG.deliveryText){
+    html += `<div class="info-row"><div class="info-icon">🛍️</div><div class="info-text">${escapeHtml(CONFIG.deliveryText)}</div></div>`;
+  }
+  if(CONFIG.whatsappNumber){
+    html += `<div class="info-section-label">Contacto</div>`;
+    html += `<a class="info-contact-btn" href="https://wa.me/${CONFIG.whatsappNumber}" target="_blank" rel="noopener">💬 +${escapeHtml(CONFIG.whatsappNumber)}</a>`;
+  }
+  if(CONFIG.facebookUrl || CONFIG.instagramUrl){
+    html += `<div class="info-section-label">Redes sociales</div><div class="info-social-row">`;
+    if(CONFIG.facebookUrl) html += `<a href="${escapeAttr(CONFIG.facebookUrl)}" target="_blank" rel="noopener" title="Facebook">📘</a>`;
+    if(CONFIG.instagramUrl) html += `<a href="${escapeAttr(CONFIG.instagramUrl)}" target="_blank" rel="noopener" title="Instagram">📷</a>`;
+    html += `</div>`;
+  }
+  if(CONFIG.secondaryCurrency && CONFIG.exchangeRate > 0){
+    const opciones = [CONFIG.currency, CONFIG.secondaryCurrency];
+    html += `<div class="info-section-label">Moneda</div>`;
+    html += `<div class="moneda-selector" id="monedaSelector${suffix}">
+      <span class="flag">💱</span>
+      <span class="codigo">${escapeHtml(monedaActual())}</span>
+      <span class="chevron">▾</span>
+    </div>
+    <div class="moneda-opciones" id="monedaOpciones${suffix}">
+      ${opciones.map(cod => `<div class="opcion${cod === monedaActual() ? " selected" : ""}" data-cod="${escapeAttr(cod)}">${cod === monedaActual() ? "✓ " : ""}${escapeHtml(cod)}</div>`).join("")}
+    </div>`;
+  }
+  return html;
+}
+function hayInfoExtra(){
+  return !!(calcularEstadoHorario() || CONFIG.address || CONFIG.deliveryText || CONFIG.whatsappNumber ||
+    CONFIG.facebookUrl || CONFIG.instagramUrl || (CONFIG.secondaryCurrency && CONFIG.exchangeRate > 0));
+}
+function bindInfoExtraEvents(suffix){
+  const selector = document.getElementById("monedaSelector"+suffix);
+  const opcionesEl = document.getElementById("monedaOpciones"+suffix);
+  if(selector && opcionesEl){
+    selector.onclick = () => {
+      selector.classList.toggle("abierto");
+      opcionesEl.classList.toggle("show");
+    };
+    opcionesEl.querySelectorAll(".opcion").forEach(el => {
+      el.onclick = () => fijarMoneda(el.dataset.cod);
+    });
+  }
+}
+
+/* ---------- Resumen visible en la página (sin abrir el panel) ---------- */
+let resumenDescExpandida = false;
+function renderResumenTienda(){
+  const wrap = document.getElementById("tiendaResumen");
+  if(!wrap) return;
+  if(!CONFIG.description && !hayInfoExtra()){ wrap.style.display = "none"; return; }
+  wrap.style.display = "block";
+
+  let html = "";
+  const esLarga = !!CONFIG.description && CONFIG.description.length > 100;
+  if(CONFIG.description){
+    html += `<div class="tienda-resumen-desc${(esLarga && !resumenDescExpandida) ? " clamped" : ""}">${escapeHtml(CONFIG.description)}</div>`;
+  }
+
+  // Al desplegar se muestra TODA la info (horario, dirección, contacto, redes, moneda),
+  // igual que el panel modal, para que el cliente no tenga que entrar a otro lado.
+  if(resumenDescExpandida){
+    html += buildInfoExtraHtml("Resumen");
+  }
+
+  if(esLarga || hayInfoExtra()){
+    html += `<div class="tienda-resumen-vermas" id="resumenVerMas">${resumenDescExpandida ? "Ver menos" : "Ver más..."}</div>`;
+  }
+
+  wrap.innerHTML = html;
+
+  const verMasEl = document.getElementById("resumenVerMas");
+  if(verMasEl){
+    verMasEl.onclick = () => {
+      resumenDescExpandida = !resumenDescExpandida;
+      renderResumenTienda();
+    };
+  }
+  bindInfoExtraEvents("Resumen");
+}
+
+/* ---------- Panel "Info de la tienda" ---------- */
+let infoDescExpandida = false; // controla si la descripción larga está desplegada
+function renderInfoTienda(){
+  const body = document.getElementById("infoTiendaBody");
+  if(!body) return;
+  document.getElementById("infoTiendaNombre").textContent = CONFIG.shopName;
+
+  let html = "";
+  if(CONFIG.description){
+    const desc = CONFIG.description;
+    const esLarga = desc.length > 100; // a partir de aquí conviene truncar
+    if(esLarga && !infoDescExpandida){
+      html += `<div class="info-desc clamped">${escapeHtml(desc)}</div>`;
+      html += `<div class="info-desc-vermas" id="infoDescVerMas">Ver más...</div>`;
+    }else{
+      html += `<div class="info-desc">${escapeHtml(desc)}</div>`;
+      if(esLarga) html += `<div class="info-desc-vermas" id="infoDescVerMenos">Ver menos</div>`;
+    }
+  }
+
+  html += buildInfoExtraHtml("");
+
+  body.innerHTML = html;
+
+  const verMas = document.getElementById("infoDescVerMas");
+  if(verMas) verMas.onclick = () => { infoDescExpandida = true; renderInfoTienda(); };
+  const verMenos = document.getElementById("infoDescVerMenos");
+  if(verMenos) verMenos.onclick = () => { infoDescExpandida = false; renderInfoTienda(); };
+
+  const selector = document.getElementById("monedaSelector");
+  const opcionesEl = document.getElementById("monedaOpciones");
+  if(selector && opcionesEl){
+    selector.onclick = () => {
+      selector.classList.toggle("abierto");
+      opcionesEl.classList.toggle("show");
+    };
+    opcionesEl.querySelectorAll(".opcion").forEach(el => {
+      el.onclick = () => fijarMoneda(el.dataset.cod);
+    });
+  }
+}
+function escapeAttr(s){ return escapeHtml(s).replace(/"/g, "&quot;"); }
+function abrirInfoTienda(){
+  infoDescExpandida = false; // el panel siempre abre con la descripción contraída
+  renderInfoTienda();
+  document.getElementById("overlayInfoTienda").classList.add("show");
+}
+function cerrarInfoTienda(){
+  document.getElementById("overlayInfoTienda").classList.remove("show");
+}
+document.getElementById("brandRow").onclick = abrirInfoTienda;
+document.getElementById("closeInfoTienda").onclick = cerrarInfoTienda;
+document.getElementById("overlayInfoTienda").addEventListener("click", (e) => {
+  if(e.target.id === "overlayInfoTienda") cerrarInfoTienda();
+});
+
+
+/* ---------- Franja "Nuevo en la tienda" ---------- */
+function renderNovedades(){
+  const wrap = document.getElementById("novedades");
+  const scroll = document.getElementById("novedadesScroll");
+  const nuevos = PRODUCTS.filter(p => p.isNew && !p.outOfStock);
+  if(!nuevos.length){ wrap.style.display = "none"; return; }
+  wrap.style.display = "block";
+  document.getElementById("novedadesTiendaNombre").textContent = CONFIG.shopName;
+  scroll.innerHTML = "";
+  nuevos.forEach(p => {
+    const src = photoThumbSrc(p);
+    const card = document.createElement("div");
+    card.className = "novedad-card";
+    card.innerHTML = `
+      <div class="foto-wrap">${src ? fotoTag(src, escapeHtml(p.name), "width:100%;height:100%;object-fit:cover;", photoSrc(p)) : '<div class="foto-placeholder">📦</div>'}</div>
+      <div class="info">
+        <div class="nombre">${escapeHtml(p.name)}</div>
+        <div class="precio">${precioTexto(p.price)}</div>
+      </div>
+    `;
+    card.onclick = () => { changeQty(p, 1); openCart(); };
+    scroll.appendChild(card);
+  });
+}
+
+// Franja "Más vendidos": productos que marcaste manualmente como más vendidos
+// desde la app de gestión (checkbox 🔥 en cada producto, o el botón para
+// marcar varios seleccionados de una vez).
+function renderMasVendidos(){
+  const wrap = document.getElementById("masVendidos");
+  const scroll = document.getElementById("masVendidosScroll");
+  const destacados = PRODUCTS.filter(p => p.bestSeller && !p.outOfStock);
+  if(!destacados.length){ wrap.style.display = "none"; return; }
+  wrap.style.display = "block";
+  scroll.innerHTML = "";
+  destacados.forEach(p => {
+    const src = photoThumbSrc(p);
+    const card = document.createElement("div");
+    card.className = "novedad-card";
+    card.innerHTML = `
+      <div class="foto-wrap">${src ? fotoTag(src, escapeHtml(p.name), "width:100%;height:100%;object-fit:cover;", photoSrc(p)) : '<div class="foto-placeholder">📦</div>'}</div>
+      <div class="info">
+        <div class="nombre">${escapeHtml(p.name)}</div>
+        <div class="precio">${precioTexto(p.price)}</div>
+      </div>
+    `;
+    card.onclick = () => abrirDetalle(p);
+    scroll.appendChild(card);
+  });
+}
+
+function buildChips(){
+  const cats = ["Todos", ...new Set(PRODUCTS.map(p => p.category || "Otros"))];
+  const wrap = document.getElementById("chips");
+  wrap.innerHTML = "";
+  cats.forEach(cat => {
+    const el = document.createElement("button");
+    el.className = "chip" + (cat === activeCategory ? " active" : "");
+    el.textContent = cat;
+    el.onclick = () => { activeCategory = cat; buildChips(); render(); };
+    wrap.appendChild(el);
+  });
+  // Chip de favoritos, solo si hay al menos uno guardado.
+  if(favoritos.size){
+    const el = document.createElement("button");
+    el.className = "chip" + (activeCategory === "__favoritos__" ? " active" : "");
+    el.textContent = `❤️ Favoritos (${favoritos.size})`;
+    el.onclick = () => { activeCategory = "__favoritos__"; buildChips(); render(); };
+    wrap.appendChild(el);
+  }
+}
+
+// ---- Modo ahorro de datos en conexiones lentas ----
+// En redes 2G/lentas (comunes en Cuba) o con el "ahorro de datos" del
+// teléfono activado, no cargamos automáticamente todas las fotos del listado
+// Genera el HTML de una foto de producto (carga automática normal, con
+// loading="lazy" para no descargar todo de golpe).
+// fallbackSrc: si la miniatura (photoThumb) falla, intentamos con la foto
+// completa (photo) antes de rendirnos y mostrar el ícono de "sin foto" — así
+// un producto con la miniatura rota (por un corte a mitad de la sync) igual
+// muestra su foto real en vez de quedar sin foto.
+function fotoTag(src, alt, style, fallbackSrc){
+  if(!src) return null;
+  const styleAttr = style ? ` style="${style}"` : "";
+  const fbAttr = (fallbackSrc && fallbackSrc !== src) ? ` data-fallback="${escapeHtml(fallbackSrc)}"` : "";
+  return `<img src="${src}" alt="${alt}" loading="lazy" decoding="async"${styleAttr}${fbAttr} onerror="fotoError(this,'card')" onload="fotoCargada(this,'card')">`;
+}
+
+// imgbb, cuando una foto de verdad se rompió (se borró, expiró, etc.), NO
+// responde con un error HTTP normal: responde con éxito (200) y una imagen
+// de aviso que dice "image not found" — así que onerror de abajo nunca se
+// entera, y esa imagen de aviso se queda pegada como si fuera la foto real.
+// Esto pasa sobre todo con la MINIATURA (photoThumb), que se sube aparte de
+// la foto grande y puede romperse sin que la foto grande se vea afectada.
+// Como el navegador SÍ tuvo que descargar esa imagen para mostrarla, se
+// puede revisar cuánto pesó (con la API de Resource Timing, sin gastar datos
+// de más) — la imagen de aviso de imgbb pesa muy poco comparado con
+// cualquier foto de producto real. Si pesa sospechosamente poco, se trata
+// igual que un error de carga: se prueba el fallback (la foto grande) antes
+// de rendirse.
+const UMBRAL_BYTES_FOTO_SOSPECHOSA = 4000;
+function fotoCargada(img, tipo){
+  try{
+    if(!window.performance || !performance.getEntriesByType) return;
+    const url = img.currentSrc || img.src;
+    const entradas = performance.getEntriesByType("resource");
+    let entrada = null;
+    for(let i = entradas.length - 1; i >= 0; i--){
+      if(entradas[i].name === url){ entrada = entradas[i]; break; }
+    }
+    if(!entrada) return;
+    const peso = entrada.encodedBodySize || entrada.transferSize || 0;
+    // peso === 0 puede significar "no se pudo medir" (ej. imagen cacheada de
+    // antes sin datos de red) en vez de "imagen vacía" — en ese caso no se
+    // toca nada, para no arriesgarse a un falso positivo.
+    if(peso > 0 && peso < UMBRAL_BYTES_FOTO_SOSPECHOSA){
+      fotoError(img, tipo);
+    }
+  }catch(e){ /* Resource Timing no disponible en este navegador: no se hace nada */ }
+}
+
+// Si una foto falla al cargar de verdad (sin conexión, URL rota, servidor
+// caído) la reemplazamos por el mismo ícono de "sin foto" 📦 que ya usamos
+// cuando el producto no tiene foto cargada, en vez de dejar el ícono roto
+// feo del navegador. Antes NINGÚN <img> del sitio tenía manejo de error.
+// Si el <img> tiene un data-fallback (la foto completa, cuando la que falló
+// era solo la miniatura) probamos esa primero antes de rendirnos.
+function fotoError(img, tipo){
+  const fallback = img.dataset.fallback;
+  if(fallback){
+    img.removeAttribute("data-fallback");
+    img.onerror = () => fotoError(img, tipo);
+    img.onload = () => fotoCargada(img, tipo);
+    img.src = fallback;
+    return;
+  }
+  img.onerror = null;
+  img.onload = null;
+  if(tipo === "logo"){
+    if(img.parentElement) img.parentElement.textContent = "🛍️";
+    return;
+  }
+  if(tipo === "galeria"){
+    const item = img.closest(".detalle-galeria-item");
+    if(item) item.remove();
+    return;
+  }
+  const reemplazos = {
+    card: '<div class="foto-placeholder">📦</div>',
+    mini: '<div class="foto-placeholder" style="width:44px;height:44px;font-size:1.3rem;border-radius:8px;">📦</div>',
+    cart: '<div class="cart-item-info" style="width:52px;height:52px;"></div>',
+    detalle: '<div class="foto-placeholder" style="font-size:3.2rem;">📦</div>'
+  };
+  img.outerHTML = reemplazos[tipo] || reemplazos.card;
+}
+
+// La app de gestión puede subir, además de la foto completa (p.photo), una
+// miniatura mucho más liviana (p.photoThumb) pensada solo para la grilla del
+// catálogo. Si existe, se usa ahí — así la vista general carga rápido incluso
+// con mala señal — y la foto completa se reserva para cuando el cliente abre
+// el detalle del producto, que es cuando realmente hace falta verla bien.
+function photoThumbSrc(p){
+  if(p.photoThumb){
+    if(p.photoThumb.startsWith("http") || p.photoThumb.startsWith("data:")) return p.photoThumb;
+    return "data:image/jpeg;base64," + p.photoThumb;
+  }
+  return photoSrc(p);
+}
+
+// Si el producto tiene stock bajo (tu app envía p.qty cuando llevas control
+// de cantidades) devuelve cuántas unidades quedan, para mostrar la alerta de
+// urgencia. Devuelve null si no aplica (agotado, sin control de stock, o
+// todavía hay unidades de sobra).
+function stockUrgente(p){
+  if(p.outOfStock || !CONFIG.lowStockEnabled) return null;
+  const q = p.qty;
+  if(q === undefined || q === null || q === "" || isNaN(q)) return null;
+  const n = Number(q);
+  const umbral = CONFIG.lowStockThreshold || 2;
+  return (n > 0 && n <= umbral) ? n : null;
+}
+
+function photoSrc(p){
+  if(!p.photo) return null;
+  if(p.photo.startsWith("http") || p.photo.startsWith("data:")) return p.photo;
+  return "data:image/jpeg;base64," + p.photo;
+}
+
+function fmt(n){
+  return Number(n || 0).toLocaleString("es");
+}
+function precioTextoCheckout(price){
+  // El descuento (efectivo o USD) se aplica también precio por producto en el
+  // carrito, no solo en el total general, para que el cliente vea de una vez
+  // cuánto le toca pagar por cada cosa.
+  const conDescuento = calcularTotalConDescuento(price);
+  if(metodoPago === "usd" && CONFIG.exchangeRate > 0){
+    return `${CONFIG.secondaryCurrency} ${fmt(Math.round((conDescuento / CONFIG.exchangeRate) * 100) / 100)}`;
+  }
+  return `${CONFIG.currency} ${fmt(conDescuento)}`;
+}
+
+// Con catálogos grandes (cientos de productos), armar TODAS las tarjetas de
+// una sola vez es lo que hace sentir pesado el sitio: cada letra que
+// escribes en el buscador reconstruía cientos de elementos del DOM. Ahora
+// solo se muestra un primer grupo (PAGE_SIZE) y el resto se carga con el
+// botón "Ver más" — el catálogo entero sigue estando ahí, solo que no se
+// dibuja todo de golpe si nadie lo va a ver.
+const PAGE_SIZE = 30;
+let productosVisibles = PAGE_SIZE;
+let ultimaListaFiltrada = [];
+
+function render(){
+  const grid = document.getElementById("grid");
+  const empty = document.getElementById("emptyState");
+
+  const term = normalizarTexto(searchTerm.trim());
+  const terminosBuscar = term ? expandirTerminoBusqueda(term) : [];
+  const list = PRODUCTS.filter(p => {
+    const inCat = activeCategory === "Todos" || (p.category || "Otros") === activeCategory
+      || (activeCategory === "__favoritos__" && esFavorito(p.id));
+    // La búsqueda también revisa la categoría y las etiquetas del producto
+    // (no solo el nombre), ignora acentos, y expande sinónimos/vocabulario
+    // técnico regional (ver SINONIMOS_BUSQUEDA): si escriben "perica" también
+    // encuentra los productos guardados como "llave ajustable".
+    const textoProducto = normalizarTexto([p.name, p.category || "", (p.tags || []).join(" ")].join(" "));
+    const inSearch = !term || terminosBuscar.some(t => textoProducto.includes(t));
+    const inAgotados = mostrarAgotados || !p.outOfStock;
+    return inCat && inSearch && inAgotados;
+  }).sort((a, b) => {
+    // los agotados (cuando se muestran) siempre quedan al final
+    const aAgotado = !!a.outOfStock, bAgotado = !!b.outOfStock;
+    if(aAgotado !== bAgotado) return aAgotado ? 1 : -1;
+    if(ordenActual === "precio-asc") return a.price - b.price;
+    if(ordenActual === "precio-desc") return b.price - a.price;
+    if(ordenActual === "nombre-asc") return a.name.localeCompare(b.name, "es");
+    return 0; // orden de la tienda (estable, no revuelve nada)
+  });
+
+  ultimaListaFiltrada = list;
+  productosVisibles = Math.min(PAGE_SIZE, list.length);
+
+  empty.style.display = list.length ? "none" : "block";
+  if(!list.length){
+    const textoVacio = document.getElementById("emptyStateTexto");
+    textoVacio.textContent = term
+      ? "No encontramos nada con esa palabra. Prueba con otro nombre (por ejemplo, el genérico de la herramienta) o escríbenos por WhatsApp."
+      : "No hay productos que coincidan.";
+    if(term) trackBusquedaSinResultado(term);
+  }
+  grid.innerHTML = "";
+  agregarTarjetas(list.slice(0, productosVisibles));
+  actualizarBotonVerMas();
+}
+
+// Agrega más productos de la lista ya filtrada (no vuelve a filtrar/ordenar
+// ni a redibujar lo que ya estaba en pantalla — solo suma las siguientes).
+function cargarMasProductos(){
+  const siguiente = Math.min(productosVisibles + PAGE_SIZE, ultimaListaFiltrada.length);
+  agregarTarjetas(ultimaListaFiltrada.slice(productosVisibles, siguiente));
+  productosVisibles = siguiente;
+  actualizarBotonVerMas();
+}
+
+function actualizarBotonVerMas(){
+  const btn = document.getElementById("btnVerMas");
+  const restantes = ultimaListaFiltrada.length - productosVisibles;
+  if(restantes <= 0){ btn.style.display = "none"; return; }
+  btn.style.display = "block";
+  btn.textContent = `Ver más productos (${productosVisibles} de ${ultimaListaFiltrada.length})`;
+}
+
+function agregarTarjetas(items){
+  const grid = document.getElementById("grid");
+  const frag = document.createDocumentFragment();
+  items.forEach(p => {
+    const card = document.createElement("div");
+    card.className = "card" + (p.outOfStock ? " agotada" : "");
+    card.dataset.id = p.id;
+
+    const src = photoThumbSrc(p);
+    const qty = cart[p.id] || 0;
+    const descuento = (!p.outOfStock && p.oldPrice && p.oldPrice > p.price)
+      ? Math.round((1 - p.price / p.oldPrice) * 100)
+      : 0;
+    const urgente = stockUrgente(p);
+
+    card.innerHTML = `
+      <div class="foto-wrap">
+        <button type="button" class="fav-btn${esFavorito(p.id) ? " activo" : ""}" data-role="fav" title="Guardar en favoritos" aria-label="${esFavorito(p.id) ? "Quitar de favoritos" : "Guardar en favoritos"}" aria-pressed="${esFavorito(p.id) ? "true" : "false"}">${esFavorito(p.id) ? "❤️" : "🤍"}</button>
+        ${p.outOfStock ? '<div class="placa-agotado"><span class="remache"></span>Agotado<span class="remache"></span></div>' : ""}
+        ${urgente ? `<div class="placa-urgencia">⚡ ¡${urgente === 1 ? "Última unidad" : `Últimas ${urgente} unidades`}!</div>` : ""}
+        ${descuento > 0 ? `<div class="badge-tag">-${descuento}%</div>` : ""}
+        ${(!p.outOfStock && p.isNew) ? '<div class="badge-nuevo">NUEVO</div>' : ""}
+        ${src ? fotoTag(src, escapeHtml(p.name), null, photoSrc(p)) : '<div class="foto-placeholder">📦</div>'}
+      </div>
+      <div class="card-body">
+        <div class="card-cat">${escapeHtml(p.category || "")}</div>
+        <div class="card-name">${escapeHtml(p.name)}</div>
+        <div class="price-row">
+          ${p.oldPrice ? `<span class="price-old">${precioTexto(p.oldPrice)}</span>` : ""}
+          <span class="price-now">${precioTexto(p.price)}</span>
+        </div>
+        <div class="add-row" data-role="addrow"></div>
+      </div>
+    `;
+    const addRow = card.querySelector('[data-role="addrow"]');
+    renderAddRow(addRow, p, qty);
+    const favBtn = card.querySelector('[data-role="fav"]');
+    if(favBtn) favBtn.onclick = (e) => { e.stopPropagation(); toggleFavorito(p.id, favBtn); };
+    card.onclick = (e) => {
+      if(e.target.closest(".add-row") || e.target.closest(".fav-btn")) return; // no abrir el detalle si tocó +/- o el corazón
+      abrirDetalle(p);
+    };
+    frag.appendChild(card);
+  });
+  grid.appendChild(frag);
+}
+
+function renderAddRow(addRow, p, qty){
+  if(p.outOfStock){
+    addRow.innerHTML = `<span class="link-avisame" data-role="avisame">🔔 Avísame cuando vuelva</span>`;
+    const link = addRow.querySelector('[data-role="avisame"]');
+    if(link) link.onclick = (e) => { e.stopPropagation(); notificarDisponible(p); };
+    return;
+  }
+  if(qty > 0){
+    addRow.innerHTML = `
+      <div class="qty-stepper">
+        <button type="button" data-act="less">−</button>
+        <input type="number" class="qty-input" inputmode="numeric" min="0" value="${qty}">
+        <button type="button" data-act="more">+</button>
+      </div>
+      <span></span>
+    `;
+    addRow.querySelector('[data-act="less"]').onclick = () => changeQty(p, -1);
+    addRow.querySelector('[data-act="more"]').onclick = () => changeQty(p, 1);
+    // El cliente puede tocar el número y escribir directamente la cantidad que
+    // quiere, en vez de tener que tocar "+" muchas veces para pedidos grandes.
+    const input = addRow.querySelector(".qty-input");
+    input.onclick = (e) => e.stopPropagation();
+    const commit = () => setQty(p, input.value);
+    input.onchange = commit;
+    input.onblur = commit;
+    input.addEventListener("keydown", (e) => { if(e.key === "Enter"){ e.preventDefault(); input.blur(); } });
+  }else{
+    addRow.innerHTML = `<span></span><button class="btn-add">+</button>`;
+    const btn = addRow.querySelector(".btn-add");
+    btn.onclick = (e) => {
+      e.stopPropagation();
+      // Pequeña animación (bolita verde + check) antes de pasar al selector
+      // de cantidad, para que se sienta el "agregado" como en la referencia.
+      btn.classList.add("added");
+      btn.textContent = "✓";
+      setTimeout(() => changeQty(p, 1), 380);
+    };
+  }
+}
+
+function changeQty(p, delta){
+  const current = cart[p.id] || 0;
+  const next = Math.max(0, current + delta);
+  if(next === 0) delete cart[p.id];
+  else cart[p.id] = next;
+  if(current === 0 && next > 0) trackAgregarCarrito(p);
+  actualizarCardEnGrid(p);
+  updateCartBubble();
+  guardarCarrito();
+  if(productoDetalleActual && productoDetalleActual.id === p.id){
+    renderAddRow(document.getElementById("detalleAddRow"), p, cart[p.id] || 0);
+  }
+}
+
+function setQty(p, value){
+  let next = parseInt(String(value).replace(/[^0-9]/g,""), 10);
+  if(isNaN(next) || next < 0) next = 0;
+  const current = cart[p.id] || 0;
+  if(next === 0) delete cart[p.id];
+  else cart[p.id] = next;
+  if(current === 0 && next > 0) trackAgregarCarrito(p);
+  actualizarCardEnGrid(p);
+  updateCartBubble();
+  guardarCarrito();
+  if(productoDetalleActual && productoDetalleActual.id === p.id){
+    renderAddRow(document.getElementById("detalleAddRow"), p, cart[p.id] || 0);
+  }
+}
+
+// Actualiza solo la tarjeta de este producto en la grilla (si está visible
+// en la página actual), en vez de reconstruir todo el catálogo entero cada
+// vez que el cliente toca "+"/"-" — con cientos de productos, redibujar todo
+// por un solo cambio de cantidad es justo lo que hacía sentir pesado el sitio.
+function actualizarCardEnGrid(p){
+  const card = document.getElementById("grid").querySelector(`[data-id="${p.id}"]`);
+  if(!card) return;
+  const addRow = card.querySelector('[data-role="addrow"]');
+  if(addRow) renderAddRow(addRow, p, cart[p.id] || 0);
+}
+
+function updateCartBubble(){
+  const ids = Object.keys(cart);
+  const bubble = document.getElementById("cartBubble");
+  const countEl = document.getElementById("cartCount");
+  const prevCount = parseInt(countEl.textContent, 10) || 0;
+  const count = ids.reduce((a,id) => a + cart[id], 0);
+  countEl.textContent = count;
+  const totalBase = ids.reduce((sum,id) => {
+    const p = PRODUCTS.find(x => x.id === id);
+    return p ? sum + p.price * cart[id] : sum;
+  }, 0);
+  document.getElementById("cartBubbleTotal").textContent = precioTexto(totalBase);
+  bubble.classList.toggle("hidden", count === 0);
+  // "Bump" cada vez que sube la cantidad, para que la burbuja se sienta viva
+  // al agregar un producto (igual que el video de referencia).
+  if(count > prevCount){
+    bubble.classList.remove("bump");
+    void bubble.offsetWidth; // reinicia la animación aunque se dispare seguido
+    bubble.classList.add("bump");
+  }
+}
+
+/* ---------- Carrito / modal ---------- */
+function openCart(){
+  renderCartSheet();
+  document.getElementById("overlay").classList.add("show");
+}
+function closeCart(){
+  document.getElementById("overlay").classList.remove("show");
+}
+
+function renderCartSheet(){
+  const list = document.getElementById("cartList");
+  list.innerHTML = "";
+  let total = 0;
+
+  const ids = Object.keys(cart);
+  const btnVaciar = document.getElementById("btnVaciarCarrito");
+  if(btnVaciar) btnVaciar.style.display = ids.length ? "inline-block" : "none";
+  if(!ids.length){
+    list.innerHTML = `<div class="empty-state"><div class="icono">🛒</div>Aún no agregaste productos.</div>`;
+  }
+
+  ids.forEach(id => {
+    const p = PRODUCTS.find(x => x.id === id);
+    if(!p) return;
+    const qty = cart[id];
+    const subtotal = p.price * qty;
+    total += subtotal;
+    const src = photoThumbSrc(p);
+
+    const row = document.createElement("div");
+    row.className = "cart-item";
+    row.innerHTML = `
+      ${src ? `<img src="${src}" data-fallback="${escapeHtml(photoSrc(p) || "")}" onerror="fotoError(this,'cart')" onload="fotoCargada(this,'cart')">` : `<div class="cart-item-info" style="width:52px;height:52px;"></div>`}
+      <div class="cart-item-info">
+        <div class="nombre">${escapeHtml(p.name)}</div>
+        <div class="precio">${qty} × ${precioTextoCheckout(p.price)} = ${precioTextoCheckout(subtotal)}</div>
+      </div>
+      <button class="cart-item-remove" title="Quitar">🗑️</button>
+    `;
+    row.querySelector(".cart-item-remove").onclick = () => {
+      delete cart[id];
+      renderCartSheet();
+      updateCartBubble();
+      guardarCarrito();
+      render();
+    };
+    list.appendChild(row);
+  });
+
+  renderPagoOpciones();
+  renderEntregaOpciones();
+
+  const totalConDescuento = calcularTotalConDescuento(total);
+  if(metodoPago === "usd" && CONFIG.exchangeRate > 0){
+    const totalUsd = Math.round((totalConDescuento / CONFIG.exchangeRate) * 100) / 100;
+    document.getElementById("cartTotal").innerHTML =
+      `${CONFIG.secondaryCurrency} ${fmt(totalUsd)} <span style="font-size:.72rem;color:var(--gris);font-weight:400;">(≈ ${CONFIG.currency} ${fmt(totalConDescuento)}${CONFIG.descuentoEfectivo > 0 ? ` con ${CONFIG.descuentoEfectivo}% de descuento` : ""})</span>`;
+  }else{
+    document.getElementById("cartTotal").innerHTML = (metodoPago === "efectivo" && CONFIG.descuentoEfectivo > 0 && total > 0)
+      ? `<span style="text-decoration:line-through;color:var(--gris);font-size:.8rem;font-weight:400;">${CONFIG.currency} ${fmt(total)}</span> ${CONFIG.currency} ${fmt(totalConDescuento)}`
+      : `${CONFIG.currency} ${fmt(totalConDescuento)}`;
+  }
+
+  const notaPago = document.getElementById("notaPago");
+  if(CONFIG.infoPago){
+    notaPago.textContent = "💳 " + CONFIG.infoPago;
+    notaPago.style.display = "block";
+  }else{
+    notaPago.style.display = "none";
+  }
+}
+
+function calcularTotalConDescuento(total){
+  // El pago en la moneda secundaria (USD) equivale a pagar en efectivo,
+  // así que recibe el mismo descuento.
+  if((metodoPago === "efectivo" || metodoPago === "usd") && CONFIG.descuentoEfectivo > 0){
+    return total * (1 - CONFIG.descuentoEfectivo / 100);
+  }
+  return total;
+}
+
+function renderPagoOpciones(){
+  const wrap = document.getElementById("pagoOpciones");
+  const hayDescuento = CONFIG.descuentoEfectivo > 0;
+  const hayUsd = CONFIG.exchangeRate > 0 && CONFIG.secondaryCurrency;
+  if(!hayDescuento && !hayUsd){ wrap.style.display = "none"; return; }
+  wrap.style.display = "flex";
+  wrap.innerHTML = `
+    ${hayDescuento ? `
+    <div class="pago-opcion${metodoPago === "efectivo" ? " selected" : ""}" data-metodo="efectivo">
+      <input type="radio" name="metodoPago" ${metodoPago === "efectivo" ? "checked" : ""}>
+      <div><div>💵 Efectivo</div><div class="desc">${CONFIG.descuentoEfectivo}% de descuento</div></div>
+    </div>` : ""}
+    <div class="pago-opcion${metodoPago === "transferencia" ? " selected" : ""}" data-metodo="transferencia">
+      <input type="radio" name="metodoPago" ${metodoPago === "transferencia" ? "checked" : ""}>
+      <div><div>🏦 Transferencia</div><div class="desc">Precio normal</div></div>
+    </div>
+    ${hayUsd ? `
+    <div class="pago-opcion${metodoPago === "usd" ? " selected" : ""}" data-metodo="usd">
+      <input type="radio" name="metodoPago" ${metodoPago === "usd" ? "checked" : ""}>
+      <div><div>💲 Pago en ${escapeHtml(CONFIG.secondaryCurrency)}</div><div class="desc">${CONFIG.descuentoEfectivo > 0 ? `Con ${CONFIG.descuentoEfectivo}% de descuento, al cambio de hoy` : "Al cambio de hoy"}</div></div>
+    </div>` : ""}
+  `;
+  wrap.querySelectorAll(".pago-opcion").forEach(el => {
+    el.onclick = () => { metodoPago = el.dataset.metodo; renderCartSheet(); };
+  });
+}
+
+function renderEntregaOpciones(){
+  const wrap = document.getElementById("entregaOpciones");
+  wrap.style.display = "flex";
+  wrap.innerHTML = `
+    <div class="pago-opcion${metodoEntrega === "tienda" ? " selected" : ""}" data-entrega="tienda">
+      <input type="radio" name="metodoEntrega" ${metodoEntrega === "tienda" ? "checked" : ""}>
+      <div><div>🏪 Recoger en tienda</div></div>
+    </div>
+    <div class="pago-opcion${metodoEntrega === "domicilio" ? " selected" : ""}" data-entrega="domicilio">
+      <input type="radio" name="metodoEntrega" ${metodoEntrega === "domicilio" ? "checked" : ""}>
+      <div><div>🛵 Envío a domicilio</div></div>
+    </div>
+  `;
+  const direccionBox = document.getElementById("direccionEntrega");
+  direccionBox.style.display = metodoEntrega === "domicilio" ? "block" : "none";
+  wrap.querySelectorAll(".pago-opcion").forEach(el => {
+    el.onclick = () => { metodoEntrega = el.dataset.entrega; renderEntregaOpciones(); };
+  });
+}
+
+// Genera un número de pedido corto tipo "#TT-4821" (iniciales de la tienda +
+// un contador que se guarda en este navegador). No es un folio centralizado
+// de verdad (dos clientes distintos podrían coincidir en número), pero le da
+// a cada nota de pedido una referencia rápida para hablar por WhatsApp
+// ("el pedido TT-4821") sin tener que repetir todo el contenido.
+function generarNumeroPedido(){
+  const iniciales = (CONFIG.shopName || "TT").trim().split(/\s+/).map(w => w[0]).join("").toUpperCase().slice(0, 3) || "TT";
+  let contador = parseInt(localStorage.getItem("numeroPedidoContador") || "0", 10) || 0;
+  contador++;
+  try{ localStorage.setItem("numeroPedidoContador", String(contador)); }catch(e){ /* sin almacenamiento, no pasa nada grave */ }
+  const sufijo = String(1000 + (contador % 9000)).padStart(4, "0");
+  return `${iniciales}-${sufijo}`;
+}
+
+function enviarPedidoWhatsApp(){
+  const ids = Object.keys(cart);
+  if(!ids.length) return;
+
+  const numeroPedido = generarNumeroPedido();
+  const separador = "-----------------------------";
+  let lines = [];
+  if(CONFIG.mensajePedido) lines.push(CONFIG.mensajePedido, "");
+  lines.push(`📋 *NUEVO PEDIDO - #${numeroPedido}*`);
+  lines.push(separador);
+
+  let total = 0;
+  const itemsPedido = []; // para el registro de analítica, si aplica
+  ids.forEach(id => {
+    const p = PRODUCTS.find(x => x.id === id);
+    if(!p) return;
+    const qty = cart[id];
+    const subtotal = p.price * qty;
+    total += subtotal;
+    itemsPedido.push({ id: p.id, name: p.name, qty });
+    // Cada producto se desglosa ya con el descuento aplicado (efectivo o USD),
+    // para que el cliente vea de una vez cuánto le toca pagar por cada cosa.
+    const subtotalConDescuento = calcularTotalConDescuento(subtotal);
+    if(metodoPago === "usd" && CONFIG.exchangeRate > 0){
+      const usdItem = Math.round((subtotalConDescuento / CONFIG.exchangeRate) * 100) / 100;
+      lines.push(`• ${qty}x ${p.name} - ${CONFIG.secondaryCurrency} ${fmt(usdItem)}`);
+    }else if(subtotalConDescuento < subtotal){
+      lines.push(`• ${qty}x ${p.name} - ${CONFIG.currency} ${fmt(subtotal)} → ${CONFIG.currency} ${fmt(subtotalConDescuento)}`);
+    }else{
+      lines.push(`• ${qty}x ${p.name} - ${CONFIG.currency} ${fmt(subtotal)}`);
+    }
+  });
+  lines.push(separador);
+
+  const totalConDescuento = calcularTotalConDescuento(total);
+  const descuentoAplicado = total - totalConDescuento;
+  if(descuentoAplicado > 0){
+    const etiquetaDescuento = metodoPago === "usd"
+      ? `Descuento por pago en ${CONFIG.secondaryCurrency}`
+      : "Descuento por efectivo";
+    lines.push(`Subtotal: ${CONFIG.currency} ${fmt(total)}`);
+    lines.push(`${etiquetaDescuento} (${CONFIG.descuentoEfectivo}%): -${CONFIG.currency} ${fmt(descuentoAplicado)}`);
+  }
+  if(metodoPago === "usd" && CONFIG.exchangeRate > 0){
+    const totalUsd = Math.round((totalConDescuento / CONFIG.exchangeRate) * 100) / 100;
+    lines.push(`💰 *TOTAL: ${CONFIG.secondaryCurrency} ${fmt(totalUsd)}* (≈ ${CONFIG.currency} ${fmt(totalConDescuento)} al cambio de hoy)`);
+  }else{
+    lines.push(`💰 *TOTAL: ${CONFIG.currency} ${fmt(totalConDescuento)}*`);
+  }
+
+  const etiquetaPago = metodoPago === "usd" ? CONFIG.secondaryCurrency
+    : metodoPago === "efectivo" ? "Efectivo"
+    : "Transferencia";
+  lines.push(`💳 Método de pago: ${etiquetaPago}`);
+
+  const direccion = (document.getElementById("direccionEntrega").value || "").trim();
+  const etiquetaEntrega = metodoEntrega === "domicilio"
+    ? `Envío a domicilio${direccion ? " — " + direccion : ""}`
+    : "Recogida en tienda";
+  lines.push(`📍 Entrega: ${etiquetaEntrega}`);
+
+  if(CONFIG.infoPago){
+    lines.push("");
+    lines.push(CONFIG.infoPago);
+  }
+
+  const text = encodeURIComponent(lines.join("\n"));
+  const url = `https://wa.me/${CONFIG.whatsappNumber}?text=${text}`;
+  window.open(url, "_blank");
+  pedidoYaEnviado = true; // así "carrito abandonado" no se registra de más si cierran la pestaña después de esto
+  trackEvento("pedidosEnviados", { numeroPedido, items: itemsPedido, total: totalConDescuento, moneda: CONFIG.currency });
+
+  // Después de mandarlo, preguntamos si vaciar el carrito — así se evita
+  // que el cliente vuelva a tocar "Enviar" más tarde y mande el mismo
+  // pedido duplicado por accidente.
+  setTimeout(() => {
+    if(confirm("Pedido enviado por WhatsApp.\n\n¿Vaciar el carrito para evitar enviarlo dos veces?")){
+      cart = {};
+      guardarCarrito();
+      updateCartBubble();
+      renderCartSheet();
+      render();
+    }
+  }, 400);
+}
+
+/* ---------- Imagen de la cotización / resumen del pedido ----------
+   Genera con <canvas> una "fotico" del pedido (logo, productos, moneda,
+   total y fecha de validez) para que el cliente se la pueda enseñar a quien
+   tenga que aprobar la compra (jefe, departamento de compras, etc.) sin
+   depender de WhatsApp. Todo se dibuja en el propio navegador, sin subir
+   nada a ningún lado — funciona igual con o sin internet. */
+function cargarImagenParaCanvas(src){
+  return new Promise((resolve) => {
+    if(!src){ resolve(null); return; }
+    const img = new Image();
+    // Necesario para poder usar canvas.toBlob() después si el logo viene de
+    // una URL externa (imgbb). Si el servidor no manda los headers de CORS,
+    // la carga falla y seguimos sin logo en vez de romper todo el pedido.
+    img.crossOrigin = "anonymous";
+    img.onload = () => resolve(img);
+    img.onerror = () => resolve(null);
+    img.src = src;
+  });
+}
+
+async function generarImagenPedido(){
+  const ids = Object.keys(cart);
+  if(!ids.length) return;
+  const btn = document.getElementById("btnCotizacion");
+  const textoOriginal = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = "Generando…";
+  try{
+    const items = ids.map(id => PRODUCTS.find(x => x.id === id)).filter(Boolean).map(p => ({
+      p, qty: cart[p.id]
+    }));
+    let total = 0;
+    items.forEach(it => total += it.p.price * it.qty);
+    const totalConDescuento = calcularTotalConDescuento(total);
+    const descuentoAplicado = total - totalConDescuento;
+    const usaUsd = metodoPago === "usd" && CONFIG.exchangeRate > 0;
+
+    const logoImg = await cargarImagenParaCanvas(CONFIG.logo);
+
+    // ---- Medidas ----
+    const W = 720;
+    const PAD = 34;
+    const filaAlto = 40;
+    const cabeceraAlto = 150;
+    const pieAlto = 120 + (descuentoAplicado > 0 ? 30 : 0) + (CONFIG.infoPago ? 44 : 0);
+    const H = cabeceraAlto + items.length * filaAlto + pieAlto + 40;
+
+    const canvas = document.createElement("canvas");
+    const escala = 2; // más nítido en pantallas retina/celulares
+    canvas.width = W * escala;
+    canvas.height = H * escala;
+    canvas.style.width = W + "px";
+    const ctx = canvas.getContext("2d");
+    ctx.scale(escala, escala);
+
+    // Fondo
+    ctx.fillStyle = "#F7F5F0";
+    ctx.fillRect(0, 0, W, H);
+
+    // Cabecera oscura
+    ctx.fillStyle = "#20242A";
+    ctx.fillRect(0, 0, W, cabeceraAlto);
+
+    let logoX = PAD;
+    if(logoImg){
+      const r = 26;
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(PAD + r, 44, r, 0, Math.PI * 2);
+      ctx.closePath();
+      ctx.clip();
+      ctx.drawImage(logoImg, PAD, 18, r * 2, r * 2);
+      ctx.restore();
+      logoX = PAD + r * 2 + 14;
+    }
+    ctx.fillStyle = "#FFFFFF";
+    ctx.font = "700 20px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+    ctx.textBaseline = "alphabetic";
+    ctx.fillText(CONFIG.shopName || "Mi Tienda", logoX, 50);
+    ctx.font = "400 13px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+    ctx.fillStyle = "rgba(255,255,255,.65)";
+    const fecha = new Date();
+    const fechaTxt = fecha.toLocaleDateString("es", { day:"2-digit", month:"long", year:"numeric" });
+    ctx.fillText("Resumen de pedido — " + fechaTxt, logoX, 70);
+
+    ctx.font = "700 15px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+    ctx.fillStyle = "#F5A623";
+    ctx.fillText("COTIZACIÓN", PAD, 112);
+    ctx.font = "400 12px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+    ctx.fillStyle = "rgba(255,255,255,.55)";
+    ctx.fillText("Precios sujetos a cambio — válidos solo para hoy, " + fechaTxt, PAD, 132);
+
+    // ---- Lista de productos ----
+    let y = cabeceraAlto + 34;
+    ctx.textAlign = "left";
+    items.forEach(({ p, qty }) => {
+      const subtotal = p.price * qty;
+      const subtotalDesc = calcularTotalConDescuento(subtotal);
+      ctx.font = "600 14px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+      ctx.fillStyle = "#1A1D20";
+      const nombre = p.name.length > 46 ? p.name.slice(0, 44) + "…" : p.name;
+      ctx.fillText(`${qty} × ${nombre}`, PAD, y);
+
+      ctx.textAlign = "right";
+      ctx.font = "700 14px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+      ctx.fillStyle = "#1A1D20";
+      const precioTxt = usaUsd
+        ? `${CONFIG.secondaryCurrency} ${fmt(Math.round((subtotalDesc / CONFIG.exchangeRate) * 100) / 100)}`
+        : `${CONFIG.currency} ${fmt(subtotalDesc)}`;
+      ctx.fillText(precioTxt, W - PAD, y);
+      ctx.textAlign = "left";
+
+      y += filaAlto;
+    });
+
+    // ---- Separador ----
+    y += 6;
+    ctx.strokeStyle = "#20242A";
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(PAD, y);
+    ctx.lineTo(W - PAD, y);
+    ctx.stroke();
+    y += 30;
+
+    // ---- Descuento (si aplica) ----
+    if(descuentoAplicado > 0){
+      ctx.font = "400 13px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+      ctx.fillStyle = "#6C7178";
+      ctx.fillText(`Subtotal: ${CONFIG.currency} ${fmt(total)}`, PAD, y);
+      ctx.textAlign = "right";
+      const etiquetaDescuento = metodoPago === "usd" ? `Descuento por pago en ${CONFIG.secondaryCurrency}` : "Descuento por efectivo";
+      ctx.fillText(`${etiquetaDescuento} (${CONFIG.descuentoEfectivo}%): -${CONFIG.currency} ${fmt(descuentoAplicado)}`, W - PAD, y);
+      ctx.textAlign = "left";
+      y += 30;
+    }
+
+    // ---- Total ----
+    ctx.font = "700 16px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+    ctx.fillStyle = "#1A1D20";
+    ctx.fillText("Total", PAD, y + 8);
+    ctx.textAlign = "right";
+    ctx.font = "800 22px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+    const totalTxt = usaUsd
+      ? `${CONFIG.secondaryCurrency} ${fmt(Math.round((totalConDescuento / CONFIG.exchangeRate) * 100) / 100)}`
+      : `${CONFIG.currency} ${fmt(totalConDescuento)}`;
+    ctx.fillText(totalTxt, W - PAD, y + 8);
+    ctx.textAlign = "left";
+    if(usaUsd){
+      y += 28;
+      ctx.font = "400 12px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+      ctx.fillStyle = "#6C7178";
+      ctx.textAlign = "right";
+      ctx.fillText(`≈ ${CONFIG.currency} ${fmt(totalConDescuento)} al cambio de hoy`, W - PAD, y + 8);
+      ctx.textAlign = "left";
+    }
+    y += 44;
+
+    // ---- Forma de pago / info ----
+    ctx.font = "600 12px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+    ctx.fillStyle = "#4A5650";
+    const etiquetaPago = metodoPago === "usd" ? `Pago en ${CONFIG.secondaryCurrency}` : metodoPago === "efectivo" ? "Efectivo" : "Transferencia";
+    ctx.fillText("Forma de pago: " + etiquetaPago, PAD, y);
+    y += 24;
+
+    if(CONFIG.infoPago){
+      ctx.font = "400 12px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+      ctx.fillStyle = "#6C7178";
+      ctx.fillText("💳 " + CONFIG.infoPago, PAD, y);
+      y += 24;
+    }
+
+    // ---- Pie: contacto ----
+    ctx.font = "400 11px system-ui, -apple-system, Segoe UI, Roboto, sans-serif";
+    ctx.fillStyle = "#9AA0A6";
+    const contacto = CONFIG.whatsappNumber ? `Pedido armado en el catálogo de ${CONFIG.shopName} · WhatsApp +${CONFIG.whatsappNumber}` : `Pedido armado en el catálogo de ${CONFIG.shopName}`;
+    ctx.fillText(contacto, PAD, H - 18);
+
+    await compartirOGuardarImagenCanvas(canvas, `pedido-${CONFIG.shopName || "tienda"}-${fecha.getTime()}.png`);
+  }catch(e){
+    console.error("Error generando la imagen del pedido", e);
+    alert("No se pudo generar la imagen del pedido. Intenta de nuevo.");
+  }finally{
+    btn.disabled = false;
+    btn.textContent = textoOriginal;
+  }
+}
+
+// Intenta compartir directo (para poder mandarla por WhatsApp con dos toques
+// en el celular); si el navegador no soporta compartir archivos, la descarga
+// como imagen normal.
+function compartirOGuardarImagenCanvas(canvas, filename){
+  return new Promise((resolve) => {
+    canvas.toBlob(async (blob) => {
+      if(!blob){ resolve(); return; }
+      try{
+        if(navigator.canShare && navigator.share){
+          const file = new File([blob], filename, { type: "image/png" });
+          if(navigator.canShare({ files: [file] })){
+            await navigator.share({ files: [file], title: "Pedido" });
+            resolve();
+            return;
+          }
+        }
+      }catch(e){
+        // el usuario canceló el share o el navegador lo rechazó: seguimos con la descarga
+      }
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 4000);
+      resolve();
+    }, "image/png");
+  });
+}
+
+/* ---------- Calculadora de calibre de cable + convertidor de unidades ----------
+   Todo calculado en el propio navegador (tablas estándar simplificadas de
+   ampacidad AWG para cobre, uso residencial). Es una guía aproximada: para
+   instalaciones fijas o cargas críticas, siempre hay que confirmarlo con un
+   electricista y el código eléctrico vigente. */
+const TABLA_AWG = [
+  { awg:"14", ampacidad:15 },
+  { awg:"12", ampacidad:20 },
+  { awg:"10", ampacidad:30 },
+  { awg:"8",  ampacidad:40 },
+  { awg:"6",  ampacidad:55 },
+  { awg:"4",  ampacidad:70 },
+  { awg:"3",  ampacidad:85 },
+  { awg:"2",  ampacidad:95 },
+  { awg:"1",  ampacidad:110 },
+  { awg:"1/0",ampacidad:125 },
+  { awg:"2/0",ampacidad:145 },
+  { awg:"3/0",ampacidad:165 },
+  { awg:"4/0",ampacidad:195 }
+];
+const BREAKERS_ESTANDAR = [15,20,25,30,40,50,60,70,80,90,100,125,150,175,200];
+const CARGAS_COMUNES = [
+  { label:"Iluminación (circuito general)", amps:15 },
+  { label:"Tomacorrientes generales", amps:20 },
+  { label:"Nevera / Refrigerador", amps:8 },
+  { label:"Lavadora", amps:10 },
+  { label:"Microondas", amps:13 },
+  { label:"Bomba de agua 1 HP", amps:8 },
+  { label:"A/C 12000 BTU (110V)", amps:12 },
+  { label:"A/C 12000 BTU (220V)", amps:6 },
+  { label:"A/C 18000 BTU (220V)", amps:9 },
+  { label:"Calentador de agua eléctrico", amps:25 },
+  { label:"Cocina eléctrica", amps:40 }
+];
+
+function normalizarTexto(s){
+  return (s || "").toString().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+function contienePalabra(texto, palabra){
+  const esc = String(palabra).replace(/[.*+?^${}()|[\]\\/]/g, "\\$&");
+  return new RegExp("(^|[^a-z0-9])" + esc + "([^a-z0-9]|$)", "i").test(texto);
+}
+function textoBuscableProducto(p){
+  return normalizarTexto([p.name, p.category, (p.tags || []).join(" ")].join(" "));
+}
+
+function calcularCalibreCable(amps, distanciaM){
+  amps = Number(amps) || 0;
+  if(amps <= 0) return null;
+  const ampsConMargen = amps * 1.25; // margen típico para carga continua
+  let idx = TABLA_AWG.findIndex(t => t.ampacidad >= ampsConMargen);
+  if(idx === -1) idx = TABLA_AWG.length - 1;
+  let avisoDistancia = "";
+  distanciaM = Number(distanciaM) || 0;
+  if(distanciaM > 15){
+    const saltos = distanciaM > 30 ? 2 : 1;
+    const nuevoIdx = Math.min(idx + saltos, TABLA_AWG.length - 1);
+    if(nuevoIdx !== idx){
+      idx = nuevoIdx;
+      avisoDistancia = `Se subió el calibre por la distancia (${distanciaM} m de ida) para evitar caída de tensión.`;
+    }
+  }
+  const elegido = TABLA_AWG[idx];
+  let breaker = BREAKERS_ESTANDAR.find(b => b >= ampsConMargen && b <= elegido.ampacidad);
+  if(!breaker) breaker = BREAKERS_ESTANDAR.find(b => b >= ampsConMargen) || BREAKERS_ESTANDAR[BREAKERS_ESTANDAR.length - 1];
+  return { awg: elegido.awg, ampacidad: elegido.ampacidad, breaker, avisoDistancia };
+}
+
+function buscarCablesPorCalibre(awg){
+  return PRODUCTS.filter(p => {
+    if(p.outOfStock) return false;
+    const t = textoBuscableProducto(p);
+    const esCable = contienePalabra(t,"cable") || contienePalabra(t,"cordon") || contienePalabra(t,"alambre");
+    if(!esCable) return false;
+    return contienePalabra(t, awg) || contienePalabra(t, "awg" + awg.replace("/",""));
+  }).slice(0, 4);
+}
+function buscarBreakersPorAmperaje(amp){
+  return PRODUCTS.filter(p => {
+    if(p.outOfStock) return false;
+    const t = textoBuscableProducto(p);
+    const esBreaker = ["breaker","disyuntor","flipon","termica","termomagnetico","interruptor"].some(k => t.includes(k));
+    if(!esBreaker) return false;
+    return contienePalabra(t, String(amp));
+  }).slice(0, 4);
+}
+
+// Recomendación "aproximada según lo que hay en la tienda": si no hay en
+// stock el calibre exacto que tocaba, se ofrece el calibre MÁS GRUESO
+// disponible (nunca uno más fino — un cable más grueso de lo necesario es
+// seguro, uno más fino no). Igual para el breaker, pero con uno de MAYOR
+// capacidad disponible.
+function buscarCablesAproximado(awgObjetivo){
+  const exacto = buscarCablesPorCalibre(awgObjetivo);
+  if(exacto.length) return { lista: exacto, aproximado: false, valorUsado: awgObjetivo };
+  const idx = TABLA_AWG.findIndex(t => t.awg === awgObjetivo);
+  if(idx > 0){
+    for(let i = idx - 1; i >= 0; i--){
+      const candidato = buscarCablesPorCalibre(TABLA_AWG[i].awg);
+      if(candidato.length) return { lista: candidato, aproximado: true, valorUsado: TABLA_AWG[i].awg };
+    }
+  }
+  return { lista: [], aproximado: false, valorUsado: awgObjetivo };
+}
+function buscarBreakersAproximado(ampObjetivo){
+  const exacto = buscarBreakersPorAmperaje(ampObjetivo);
+  if(exacto.length) return { lista: exacto, aproximado: false, valorUsado: ampObjetivo };
+  const idx = BREAKERS_ESTANDAR.indexOf(ampObjetivo);
+  if(idx > -1){
+    for(let i = idx + 1; i < BREAKERS_ESTANDAR.length; i++){
+      const candidato = buscarBreakersPorAmperaje(BREAKERS_ESTANDAR[i]);
+      if(candidato.length) return { lista: candidato, aproximado: true, valorUsado: BREAKERS_ESTANDAR[i] };
+    }
+  }
+  return { lista: [], aproximado: false, valorUsado: ampObjetivo };
+}
+
+function renderMiniProductos(container, lista, vacioTexto){
+  if(!lista.length){
+    container.innerHTML = `<div class="tools-empty">${vacioTexto}</div>`;
+    return;
+  }
+  container.innerHTML = lista.map(p => {
+    const src = photoThumbSrc(p);
+    return `
+      <div class="tools-mini-card" data-id="${p.id}">
+        ${src ? `<img src="${src}" data-fallback="${escapeHtml(photoSrc(p) || "")}" onerror="fotoError(this,'mini')" onload="fotoCargada(this,'mini')">` : `<div class="foto-placeholder" style="width:44px;height:44px;font-size:1.3rem;border-radius:8px;">📦</div>`}
+        <div class="tools-mini-info">
+          <div class="nombre">${escapeHtml(p.name)}</div>
+          <div class="precio">${precioTexto(p.price)}</div>
+        </div>
+      </div>
+    `;
+  }).join("");
+  container.querySelectorAll(".tools-mini-card").forEach(el => {
+    el.onclick = () => {
+      const p = PRODUCTS.find(x => x.id === el.dataset.id);
+      if(p){ cerrarHerramientas(); abrirDetalle(p); }
+    };
+  });
+}
+
+function actualizarCalculoCable(){
+  const wattsInput = parseFloat(document.getElementById("cableWatts").value);
+  const ampsInput = document.getElementById("cableAmps");
+  let amps = parseFloat(ampsInput.value);
+  let ampsCalculadosDeWatts = null;
+
+  // Si el cliente puso Watts, eso manda (se recalculan los amperios según el
+  // voltaje elegido: a 220V, el mismo aparato consume la mitad de amperios
+  // que a 110V). Si además escribió amperios a mano, se avisa cuál se usó.
+  if(wattsInput && wattsInput > 0){
+    ampsCalculadosDeWatts = Math.round((wattsInput / voltajeActual) * 100) / 100;
+    amps = ampsCalculadosDeWatts;
+  }
+
+  const distancia = parseFloat(document.getElementById("cableDistancia").value) || 0;
+  const resultado = document.getElementById("cableResultado");
+  const contCables = document.getElementById("cableProductos");
+  const contBreakers = document.getElementById("breakerProductos");
+  const labelCables = document.getElementById("cableProductosLabel");
+  const labelBreakers = document.getElementById("breakerProductosLabel");
+
+  if(!amps || amps <= 0){
+    resultado.innerHTML = "";
+    contCables.innerHTML = ""; contBreakers.innerHTML = "";
+    labelCables.style.display = "none"; labelBreakers.style.display = "none";
+    return;
+  }
+  const r = calcularCalibreCable(amps, distancia);
+  resultado.innerHTML = `
+    ${ampsCalculadosDeWatts !== null ? `<div class="tools-aviso">🔌 ${wattsInput} W a ${voltajeActual}V ≈ ${ampsCalculadosDeWatts} A.</div>` : ""}
+    <div class="tools-resultado">
+      <div class="tools-resultado-item">
+        <div class="label">Calibre recomendado</div>
+        <div class="valor">AWG ${r.awg}</div>
+        <div class="sub">Soporta hasta ${r.ampacidad} A</div>
+      </div>
+      <div class="tools-resultado-item">
+        <div class="label">Breaker recomendado</div>
+        <div class="valor">${r.breaker} A</div>
+      </div>
+    </div>
+    ${r.avisoDistancia ? `<div class="tools-aviso">⚠️ ${r.avisoDistancia}</div>` : ""}
+    <div class="tools-aviso">Guía aproximada para uso residencial (cobre, ${voltajeActual}V). Para instalaciones fijas o cargas críticas, confírmalo con un electricista.</div>
+  `;
+
+  const cables = buscarCablesAproximado(r.awg);
+  labelCables.style.display = "block";
+  labelCables.textContent = cables.aproximado
+    ? `No hay cable AWG ${r.awg} en la tienda ahora — este es más grueso (AWG ${cables.valorUsado}, más seguro) y sí lo tenemos:`
+    : `Cable calibre ${r.awg} disponible en la tienda:`;
+  renderMiniProductos(contCables, cables.lista, "No tenemos ningún calibre cercano a ese en el catálogo ahora mismo — pregúntanos por WhatsApp.");
+
+  const breakers = buscarBreakersAproximado(r.breaker);
+  labelBreakers.style.display = "block";
+  labelBreakers.textContent = breakers.aproximado
+    ? `No hay breaker de ${r.breaker} A en la tienda ahora — este es de mayor capacidad (${breakers.valorUsado} A) y sí lo tenemos:`
+    : `Breaker de ${r.breaker} A disponible en la tienda:`;
+  renderMiniProductos(contBreakers, breakers.lista, "No tenemos ningún breaker cercano a esa capacidad en el catálogo ahora mismo — pregúntanos por WhatsApp.");
+}
+
+function llenarCargasComunes(){
+  const sel = document.getElementById("cableCarga");
+  CARGAS_COMUNES.forEach(c => {
+    const opt = document.createElement("option");
+    opt.value = c.amps;
+    opt.textContent = `${c.label} (~${c.amps} A)`;
+    sel.appendChild(opt);
+  });
+  sel.onchange = () => {
+    if(sel.value){
+      document.getElementById("cableAmps").value = sel.value;
+      actualizarCalculoCable();
+    }
+  };
+}
+
+/* ---------- Convertidor de unidades ---------- */
+const CONV_FACTOR_A_MM = { convMm:1, convCm:10, convM:1000, convPulg:25.4, convPie:304.8 };
+function actualizarConversion(idOrigen){
+  const valor = parseFloat(document.getElementById(idOrigen).value);
+  Object.keys(CONV_FACTOR_A_MM).forEach(id => {
+    if(id === idOrigen) return;
+    const el = document.getElementById(id);
+    if(isNaN(valor)){ el.value = ""; return; }
+    const mm = valor * CONV_FACTOR_A_MM[idOrigen];
+    const resultado = mm / CONV_FACTOR_A_MM[id];
+    el.value = Number(resultado.toFixed(4)).toString();
+  });
+}
+
+function abrirHerramientas(){
+  document.getElementById("overlayHerramientas").classList.add("show");
+}
+function cerrarHerramientas(){
+  document.getElementById("overlayHerramientas").classList.remove("show");
+}
+function cambiarTabHerramientas(tab){
+  const esCable = tab === "cable";
+  document.getElementById("tabCable").classList.toggle("active", esCable);
+  document.getElementById("tabUnidades").classList.toggle("active", !esCable);
+  document.getElementById("panelCable").style.display = esCable ? "block" : "none";
+  document.getElementById("panelUnidades").style.display = esCable ? "none" : "block";
+}
+
+let voltajeActual = 110;
+function elegirVoltaje(v){
+  voltajeActual = v;
+  document.getElementById("voltaje110").classList.toggle("active", v === 110);
+  document.getElementById("voltaje220").classList.toggle("active", v === 220);
+  actualizarCalculoCable();
+}
+document.getElementById("voltaje110").onclick = () => elegirVoltaje(110);
+document.getElementById("voltaje220").onclick = () => elegirVoltaje(220);
+
+llenarCargasComunes();
+document.getElementById("btnHerramientas").onclick = abrirHerramientas;
+document.getElementById("closeHerramientas").onclick = cerrarHerramientas;
+document.getElementById("overlayHerramientas").onclick = (e) => { if(e.target.id === "overlayHerramientas") cerrarHerramientas(); };
+document.getElementById("tabCable").onclick = () => cambiarTabHerramientas("cable");
+document.getElementById("tabUnidades").onclick = () => cambiarTabHerramientas("unidades");
+document.getElementById("cableAmps").addEventListener("input", actualizarCalculoCable);
+document.getElementById("cableWatts").addEventListener("input", actualizarCalculoCable);
+document.getElementById("cableDistancia").addEventListener("input", actualizarCalculoCable);
+Object.keys(CONV_FACTOR_A_MM).forEach(id => {
+  document.getElementById(id).addEventListener("input", () => actualizarConversion(id));
+});
+
+/* ---------- Modal de detalle de producto ---------- */
+function abrirDetalle(p){
+  productoDetalleActual = p;
+  trackVistaProducto(p);
+  const foto = document.getElementById("detalleFoto");
+  // Todas las fotos disponibles de este producto: la principal + la galería
+  // que hayas cargado desde el catálogo (si hay).
+  const fotos = [photoSrc(p), ...((p.gallery || []).map(g => {
+    if(g.startsWith("http") || g.startsWith("data:")) return g;
+    return "data:image/jpeg;base64," + g;
+  }))].filter(Boolean);
+  const descuento = (!p.outOfStock && p.oldPrice && p.oldPrice > p.price)
+    ? Math.round((1 - p.price / p.oldPrice) * 100)
+    : 0;
+  const urgenteDetalle = stockUrgente(p);
+  function pintarFotoPrincipal(src){
+    foto.innerHTML = `
+      ${p.outOfStock ? '<div class="placa-agotado"><span class="remache"></span>Agotado<span class="remache"></span></div>' : ""}
+      ${urgenteDetalle ? `<div class="placa-urgencia">⚡ ¡${urgenteDetalle === 1 ? "Última unidad" : `Últimas ${urgenteDetalle} unidades`}!</div>` : ""}
+      ${descuento > 0 ? `<div class="badge-tag">-${descuento}%</div>` : ""}
+      ${(!p.outOfStock && p.isNew) ? '<div class="badge-nuevo">NUEVO</div>' : ""}
+      ${src ? `<img src="${src}" alt="${escapeHtml(p.name)}" onerror="fotoError(this,'detalle')" onload="fotoCargada(this,'detalle')">` : '<div class="foto-placeholder" style="font-size:3.2rem;">📦</div>'}
+    `;
+  }
+  pintarFotoPrincipal(fotos[0] || null);
+
+  const favBtnDetalle = document.getElementById("btnFavProducto");
+  if(favBtnDetalle){
+    const activo = esFavorito(p.id);
+    favBtnDetalle.textContent = activo ? "❤️" : "🤍";
+    favBtnDetalle.setAttribute("aria-label", activo ? "Quitar de favoritos" : "Guardar en favoritos");
+    favBtnDetalle.setAttribute("aria-pressed", activo ? "true" : "false");
+    favBtnDetalle.onclick = () => toggleFavorito(p.id, favBtnDetalle);
+  }
+
+  const galeriaWrap = document.getElementById("detalleGaleria");
+  if(fotos.length > 1){
+    galeriaWrap.style.display = "flex";
+    galeriaWrap.innerHTML = fotos.map((f, i) => `
+      <div class="detalle-galeria-item${i === 0 ? " activa" : ""}" data-idx="${i}">
+        <img src="${f}" alt="${escapeHtml(p.name)} ${i + 1}" loading="lazy" onerror="fotoError(this,'galeria')" onload="fotoCargada(this,'galeria')">
+      </div>
+    `).join("");
+    galeriaWrap.querySelectorAll(".detalle-galeria-item").forEach(item => {
+      item.addEventListener("click", () => {
+        galeriaWrap.querySelectorAll(".detalle-galeria-item").forEach(x => x.classList.remove("activa"));
+        item.classList.add("activa");
+        pintarFotoPrincipal(fotos[Number(item.dataset.idx)]);
+      });
+    });
+  }else{
+    galeriaWrap.style.display = "none";
+    galeriaWrap.innerHTML = "";
+  }
+
+  document.getElementById("detalleCat").textContent = p.category || "";
+  document.getElementById("detalleNombre").textContent = p.name;
+  document.getElementById("detallePrecios").innerHTML = `
+    ${p.oldPrice ? `<span class="price-old">${precioTexto(p.oldPrice)}</span>` : ""}
+    <span class="price-now">${precioTexto(p.price)}</span>
+  `;
+  renderAddRow(document.getElementById("detalleAddRow"), p, cart[p.id] || 0);
+
+  const descWrap = document.getElementById("detalleDescripcion");
+  if(p.description && p.description.trim()){
+    descWrap.style.display = "block";
+    descWrap.innerHTML = `<div class="detalle-descripcion-titulo">Descripción</div>${escapeHtml(p.description)}`;
+  }else{
+    descWrap.style.display = "none";
+    descWrap.innerHTML = "";
+  }
+
+  renderRelacionados(p);
+
+  document.getElementById("overlayProducto").classList.add("show");
+}
+
+// "También te puede interesar": productos que comparten etiqueta con el que
+// se está viendo (ej. un taladro y sus barrenas, si les pusiste la misma
+// etiqueta desde la app de gestión) tienen prioridad; si no hay suficientes,
+// se completa con productos de la misma categoría. Así, aunque no le hayas
+// puesto etiquetas a nada, igual sale algo relacionado por categoría.
+function renderRelacionados(p){
+  const wrap = document.getElementById("detalleRelacionados");
+  const scroll = document.getElementById("detalleRelacionadosScroll");
+  const misTags = new Set((p.tags || []).map(t => t.toLowerCase()));
+
+  const candidatos = PRODUCTS
+    .filter(x => x.id !== p.id && !x.outOfStock)
+    .map(x => {
+      const tagsCompartidas = (x.tags || []).filter(t => misTags.has(t.toLowerCase())).length;
+      const mismaCategoria = (x.category || "") && x.category === p.category;
+      let score = tagsCompartidas * 10 + (mismaCategoria ? 1 : 0);
+      return { producto: x, score };
+    })
+    .filter(x => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 8)
+    .map(x => x.producto);
+
+  if(!candidatos.length){ wrap.style.display = "none"; scroll.innerHTML = ""; return; }
+  wrap.style.display = "block";
+  scroll.innerHTML = "";
+  candidatos.forEach(rp => {
+    const src = photoThumbSrc(rp);
+    const card = document.createElement("div");
+    card.className = "novedad-card";
+    card.innerHTML = `
+      <div class="foto-wrap">${src ? fotoTag(src, escapeHtml(rp.name), "width:100%;height:100%;object-fit:cover;", photoSrc(rp)) : '<div class="foto-placeholder">📦</div>'}</div>
+      <div class="info">
+        <div class="nombre">${escapeHtml(rp.name)}</div>
+        <div class="precio">${precioTexto(rp.price)}</div>
+      </div>
+    `;
+    card.onclick = () => abrirDetalle(rp);
+    scroll.appendChild(card);
+  });
+}
+function cerrarDetalle(){
+  document.getElementById("overlayProducto").classList.remove("show");
+  productoDetalleActual = null;
+}
+// Deja pedir que le avisen por WhatsApp cuando un producto agotado vuelva a
+// haber, en vez de solo mostrar "No disponible" sin ninguna acción posible.
+function notificarDisponible(p){
+  if(!CONFIG.whatsappNumber){ return; }
+  const texto = `Hola! ¿Cuándo tendrán disponible de nuevo: ${p.name}?`;
+  const url = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(texto)}`;
+  window.open(url, "_blank");
+}
+
+// Arma un link directo a ESTE producto (no solo a la tienda en general), para
+// que quien lo reciba por WhatsApp caiga directo en su ficha en vez de tener
+// que buscarlo él mismo entre todo el catálogo.
+function urlProducto(p){
+  if(!location.href || !location.href.startsWith("http")) return null;
+  const base = location.href.split("?")[0].split("#")[0];
+  return `${base}?p=${encodeURIComponent(p.id)}`;
+}
+
+function compartirProducto(p){
+  const precioTxt = precioTexto(p.price);
+  const link = urlProducto(p);
+  const lineas = [`Mira este producto en ${CONFIG.shopName}:`, `${p.name} — ${precioTxt}`];
+  if(link) lineas.push(link);
+  const text = encodeURIComponent(lineas.join("\n"));
+  window.open(`https://wa.me/?text=${text}`, "_blank");
+}
+
+function escapeHtml(s){
+  return String(s || "").replace(/[&<>"']/g, m => ({
+    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+  }[m]));
+}
+
+/* ---------- eventos ---------- */
+document.getElementById("cartBubble").onclick = openCart;
+document.getElementById("closeSheet").onclick = closeCart;
+document.getElementById("btnVaciarCarrito").onclick = () => {
+  if(!Object.keys(cart).length) return;
+  if(confirm("¿Vaciar el carrito? Se eliminarán todos los productos agregados.")){
+    cart = {};
+    guardarCarrito();
+    updateCartBubble();
+    renderCartSheet();
+    render();
+  }
+};
+document.getElementById("overlay").onclick = (e) => { if(e.target.id === "overlay") closeCart(); };
+document.getElementById("btnEnviar").onclick = enviarPedidoWhatsApp;
+document.getElementById("btnCotizacion").onclick = generarImagenPedido;
+document.getElementById("searchInput").addEventListener("input", (e) => {
+  searchTerm = e.target.value;
+  // Pequeña espera antes de filtrar: si no, cada letra que se escribe
+  // reconstruye la lista completa, lo que se siente lento al escribir rápido.
+  clearTimeout(searchDebounceTimer);
+  searchDebounceTimer = setTimeout(render, 250);
+});
+document.getElementById("btnVerMas").onclick = cargarMasProductos;
+document.getElementById("switchAgotados").onclick = () => {
+  mostrarAgotados = !mostrarAgotados;
+  const sw = document.getElementById("switchAgotados");
+  sw.classList.toggle("activo", mostrarAgotados);
+  document.getElementById("textoSwitchAgotados").textContent = mostrarAgotados ? "Agotados visibles" : "Agotados ocultos";
+  render();
+};
+document.getElementById("selectOrden").addEventListener("change", (e) => {
+  ordenActual = e.target.value;
+  render();
+});
+document.getElementById("cerrarDetalle").onclick = cerrarDetalle;
+document.getElementById("overlayProducto").onclick = (e) => { if(e.target.id === "overlayProducto") cerrarDetalle(); };
+document.getElementById("btnCompartirProducto").onclick = () => { if(productoDetalleActual) compartirProducto(productoDetalleActual); };
+
+/* ---------- Compartir la tienda (Web Share API, con copiar enlace de respaldo) ---------- */
+function compartirTienda(){
+  const url = location.href.split("?")[0].split("#")[0];
+  const texto = `Mira el catálogo de ${CONFIG.shopName} y arma tu pedido:`;
+  if(navigator.share){
+    navigator.share({ title: CONFIG.shopName, text: texto, url }).catch(() => { /* el cliente canceló el share, no hay nada que hacer */ });
+    return;
+  }
+  // Sin Web Share API (navegador de escritorio, por ejemplo): copiamos el
+  // enlace al portapapeles y avisamos, para que igual lo pueda compartir.
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(() => {
+      alert("Enlace copiado. Pégalo donde quieras compartirlo.");
+    }).catch(() => {
+      window.open(`https://wa.me/?text=${encodeURIComponent(texto + " " + url)}`, "_blank");
+    });
+  }else{
+    window.open(`https://wa.me/?text=${encodeURIComponent(texto + " " + url)}`, "_blank");
+  }
+}
+document.getElementById("btnCompartirTienda").onclick = compartirTienda;
+document.getElementById("btnReintentar").onclick = () => {
+  document.getElementById("pantallaError").style.display = "none";
+  const splash = document.getElementById("pantallaCarga");
+  splash.classList.remove("splash-exit");
+  splash.style.display = "flex";
+  document.getElementById("textoCarga").textContent = "Cargando tienda…";
+  loadProducts();
+};
+document.getElementById("btnCargarArchivo").onclick = () => document.getElementById("inputCargarArchivo").click();
+document.getElementById("inputCargarArchivo").addEventListener("change", (e) => {
+  const file = e.target.files[0];
+  if(file) cargarCatalogoDesdeArchivo(file);
+  e.target.value = ""; // permite elegir el mismo archivo otra vez si hace falta
+});
+
+loadProducts();
+/* ---------- PWA / modo offline: registra el Service Worker ----------
+   Con esto, después de la primera visita, el sitio (el HTML, CSS y JS del
+   propio catálogo) carga instantáneo aunque no haya internet. El catálogo
+   de productos en sí sigue necesitando conexión para traer datos nuevos de
+   Firebase — eso ya lo cubre el botón de "Cargar catálogo desde archivo"
+   que ya tenías para cuando falla la red por completo. */
+if("serviceWorker" in navigator){
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => { /* si falla el registro, el sitio sigue funcionando normal, solo sin caché offline */ });
+  });
+}
+
+/* ---------- Botón propio de "Instalar app" ----------
+   Los navegadores (Chrome/Edge en Android) a veces ofrecen instalar la PWA
+   solos, pero no siempre y no es controlable. Este banner captura ese
+   momento y ofrece un botón propio, más visible, en vez de depender de que
+   el navegador decida mostrarlo. Si el cliente ya lo cerró antes, no se
+   vuelve a mostrar (se recuerda en localStorage). */
+let eventoInstalacionApp = null;
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  eventoInstalacionApp = e;
+  try{
+    if(localStorage.getItem("instalarBannerCerrado") === "1") return;
+  }catch(err){ /* sin localStorage, se muestra igual */ }
+  const banner = document.getElementById("instalarBanner");
+  if(banner) banner.style.display = "flex";
+});
+document.getElementById("btnInstalarApp").onclick = async () => {
+  const banner = document.getElementById("instalarBanner");
+  if(banner) banner.style.display = "none";
+  if(!eventoInstalacionApp) return;
+  eventoInstalacionApp.prompt();
+  await eventoInstalacionApp.userChoice.catch(() => {});
+  eventoInstalacionApp = null;
+};
+document.getElementById("btnCerrarInstalar").onclick = () => {
+  const banner = document.getElementById("instalarBanner");
+  if(banner) banner.style.display = "none";
+  try{ localStorage.setItem("instalarBannerCerrado", "1"); }catch(err){ /* no pasa nada si no se puede guardar */ }
+};
+// Si el usuario ya la instaló (o la abrió como app instalada), no tiene
+// sentido seguir ofreciéndole instalarla.
+window.addEventListener("appinstalled", () => {
+  const banner = document.getElementById("instalarBanner");
+  if(banner) banner.style.display = "none";
+  try{ localStorage.setItem("instalarBannerCerrado", "1"); }catch(err){}
+});
+</script>
+</body>
+</html>
